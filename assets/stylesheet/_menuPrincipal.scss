@@ -1,0 +1,12 @@
+.menuPrincipal {
+	.logoNavbar {
+		max-height: 50px;		
+	}
+	@media (max-width: 991px) {
+		position: fixed;
+		right: 0px;
+		left: 0px;
+		top: 0px;
+		z-index: 1030;		
+	}
+}
