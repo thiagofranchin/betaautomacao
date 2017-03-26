@@ -1,11 +1,11 @@
 {
-  "name": "fktheme",
+  "name": "betaautomacao",
   "version": "1.0.0",
-  "description": "",
+  "description": "Beta Automacao Theme",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/thiagofranchin/betaautomacao"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

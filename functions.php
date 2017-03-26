@@ -4,13 +4,13 @@
 add_theme_support( 'post-thumbnails' );
 
 // pegar o arquivo marca header
-require get_template_directory() . '/inc/marca.php';
+require get_template_directory() . '/src/inc/marca.php';
 
 // pegar o arquivo metabox.php
-require get_template_directory() . '/inc/metabox.php';
+require get_template_directory() . '/src/inc/metabox.php';
 
 // Registrar Navigation Walker
-require_once('inc/wp_bootstrap_navwalker.php');
+require_once('src/inc/wp_bootstrap_navwalker.php');
 register_nav_menus( array(
     'primary' => __( 'Menu Principal', 'fktheme' ),
 ) );
@@ -58,6 +58,13 @@ if ( function_exists('register_sidebar') )
         'name' =>  __( 'Footer Middle' ),
         'id' => 'sidebar-footer-middle',
         'description' => __( 'Informações no footer middle.' ),
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar(array(
+        'name' =>  __( 'Footer Copyright' ),
+        'id' => 'sidebar-footer-copyright',
+        'description' => __( 'Copyright footer.' ),
         'before_title' => '<h3>',
         'after_title' => '</h3>',
     ) );

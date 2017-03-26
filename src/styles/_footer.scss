@@ -1,0 +1,16 @@
+footer {
+	background-color: $gray;
+	color: $white;
+	.logoFooter {
+		max-height: 130px;
+		padding: 20px;
+	}
+	.copyright {
+		background-color: $gray-light;
+		height: 60px;
+		p {
+			text-align: center;
+			line-height: 60px;
+		}
+	}
+}

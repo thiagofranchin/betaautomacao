@@ -1,0 +1,31 @@
+$color-betaautomacao:	#0463cc; 
+
+$white:  		#fff;
+$black:  		#000;
+$red:    		#d9534f;
+$orange: 		#f0ad4e;
+$yellow: 		#ffd500;
+$green:  		#53B43F;
+$blue:   		#0463CC;
+$blue-light:   	#169FE6;
+$teal:   		#5bc0de;
+$pink:   		#ff5b77;
+$purple: 		#613d7c;
+
+// Create grayscale
+$gray-dark:                 #292b2c;
+$gray:                      #424242;
+$gray-light:                #4C4C4C;
+$gray-lighter:              #EEEEEE;
+$gray-lightest:             #F4F4F4;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $blue;
+$brand-success:             $green;
+$brand-info:                $teal;
+$brand-warning:             $orange;
+$brand-danger:              $red;
+$brand-inverse:             $gray-dark;
+
+
+.bg-gray { background-color: $gray; }

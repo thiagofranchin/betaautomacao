@@ -14,20 +14,23 @@ Text Domain: fk
 
 /* sass --watch style.scss:style.css --style compressed */
 
-@import 'assets/stylesheet/colors';
-@import 'assets/stylesheet/grid-xl';
+@import 'src/styles/colors';
+
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 
 body {
-	@media (max-width: 991px) { padding-top: 74px; }
+	background-color: $gray-lightest;
+	overflow-x: hidden;
 	li { list-style-type: none; }
+	@media (max-width: 991px) { padding-top: 74px; }
 }
 
-@import "assets/stylesheet/header";
-@import "assets/stylesheet/menuPrincipal";
-@import "assets/stylesheet/ultimosPosts";
-@import "assets/stylesheet/footer";
+@import "src/styles/header";
+@import "src/styles/menuPrincipal";
+@import "src/styles/slideHome";
+@import "src/styles/ultimosPosts"; 
+@import "src/styles/footer";
 
 
 

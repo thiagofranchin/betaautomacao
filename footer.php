@@ -27,6 +27,13 @@
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid copyright">		
+		<?php 
+		if ( is_active_sidebar('sidebar-footer-copyright') ) {
+			dynamic_sidebar('sidebar-footer-copyright');
+		}
+		?>		
+	</div>
 </footer>
 
 
