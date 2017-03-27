@@ -1,5 +1,6 @@
 .menuPrincipal {
 	background-color: $gray !important;
+	ul { background-color: $gray; }
 	a { color: $white; }
 	.logoNavbar {
 		max-height: 50px;		

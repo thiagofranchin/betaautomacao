@@ -15,7 +15,7 @@ Text Domain: fk
 /* sass --watch style.scss:style.css --style compressed */
 
 @import 'src/styles/colors';
-
+@import 'src/styles/grid-xl';
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 
@@ -29,7 +29,7 @@ body {
 @import "src/styles/header";
 @import "src/styles/menuPrincipal";
 @import "src/styles/slideHome";
-@import "src/styles/ultimosPosts"; 
+@import "src/styles/categoriaPosts"; 
 @import "src/styles/footer";
 
 

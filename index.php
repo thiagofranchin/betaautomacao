@@ -6,7 +6,7 @@
 
 
 	<div class="row">
-		<?php include "src/components/ultimosPosts.php"; ?>
+		<?php include "src/components/categoriaPosts.php"; ?>
 	</div>
 </div>
 <?php get_footer(); ?>

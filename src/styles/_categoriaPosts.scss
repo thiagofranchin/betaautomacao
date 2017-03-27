@@ -1,0 +1,31 @@
+.categoriaPosts {
+	padding-top: 30px;
+	background-color: $white;
+	h3 {     
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+	a {
+		text-decoration: none !important;
+	}
+	.card {
+		height: 400px;
+		margin-bottom: 30px;		
+		&:hover {
+			box-shadow: 0px 0px 20px 0px $gray;
+		}		
+		h4.card-title {
+			color: $gray;
+			font-size: 1.2rem;
+		}
+		img {		
+			max-height: 200px;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		.card-footer {
+			overflow: auto;
+		}
+	}	
+}
