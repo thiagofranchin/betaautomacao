@@ -72,16 +72,61 @@ if ( function_exists('register_sidebar') )
 
 // Paginação Wordpress
 function wordpress_pagination() {
-            global $wp_query;
+    global $wp_query;
+
+    $big = 999999999;
+
+    echo paginate_links( array(
+          'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+          'format' => '?paged=%#%',
+          'current' => max( 1, get_query_var('paged') ),
+          'total' => $wp_query->max_num_pages
+    ) );
+}
+
+
+// Post relacionados por tags | http://wpmidia.com.br/laboratorio/listando-posts-relacionados-por-tags-sem-usar-plugins/
+function show_related_posts_by_tag(){
+        global $post;
  
-            $big = 999999999;
+    $tags = wp_get_post_tags($post->ID); 
+    if ($tags) { 
+        $tag_ids = array(); 
+        foreach($tags as $individual_tag) 
+            $tag_ids[] = $individual_tag->term_id; 
  
-            echo paginate_links( array(
-                  'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                  'format' => '?paged=%#%',
-                  'current' => max( 1, get_query_var('paged') ),
-                  'total' => $wp_query->max_num_pages
-            ) );
-      }
+        $args=array( 
+            'tag__in' => $tag_ids, 
+            'post__not_in' => array($post->ID), 
+            'posts_per_page' => 6 // Number of related posts that will be shown.
+        ); 
+        $my_query = new wp_query($args); 
+        if( $my_query->have_posts() ) { 
+ 
+            echo '<h3>Veja Também</h3>'; 
+            echo '<div class="row"><div class="card-deck">';
+ 
+            while ($my_query->have_posts()) { 
+                $my_query->the_post(); ?>                                 
+                    <div class="col-lg-2">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="card">
+                                <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>">                        
+                                <div class="card-block">
+                                    <h4 class="card-title"><?php the_title(); ?></h4>
+                                    <p class="card-text"><?php echo rwmb_meta('subtitulo'); ?></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><?php echo rwmb_meta('resumo'); ?></small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            <?php } 
+            echo '</div></div>'; 
+            wp_reset_query(); //reseting custom query...
+        } 
+    } 
+}
 
 ?>
