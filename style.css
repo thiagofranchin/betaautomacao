@@ -6913,6 +6913,15 @@ header {
     .categoriaPosts .card .card-footer {
       overflow: auto; }
 
+.siglePage .titulo {
+  margin: 20px 0 20px 0; }
+.siglePage .detalhesInfoTec {
+  margin: 20px 0 20px 0; }
+.siglePage .produtosRelacionados {
+  margin: 20px 0 20px 0; }
+.siglePage .card-deck img {
+  max-height: 220px; }
+
 footer {
   background-color: #424242;
   color: #fff;
@@ -6925,6 +6934,9 @@ footer {
     height: 60px; }
     footer .copyright p {
       text-align: center;
-      line-height: 60px; }
+      line-height: 60px;
+      position: relative;
+      top: 0px;
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
