@@ -78,7 +78,7 @@
 	</div>
 	<div class="col-12 produtosRelacionados">	
 		<?php show_related_posts_by_tag(); ?>
-	</div>
+	</div>git 
 </div>
 
 <?php get_footer(); ?>
