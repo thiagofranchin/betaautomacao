@@ -1,7 +1,9 @@
 footer {
 	background-color: $gray;
 	color: $white;
-	padding-top: 30px;
+	padding-top: 30px;    
+    position: relative;
+    z-index: 2;
 	.logoFooter {
 		max-height: 130px;
 		padding: 20px;

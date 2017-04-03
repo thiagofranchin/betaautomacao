@@ -39,7 +39,7 @@
 	</header>
 
 
-	<div class="row bg-gray">
+	<div class="row bg-gray menuPrincipalContent">
 		<?php include "src/components/menuPrincipal.php"; ?>
 	</div>
 

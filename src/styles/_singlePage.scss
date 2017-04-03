@@ -1,14 +1,44 @@
 .siglePage {
-	.titulo {
-		margin: 20px 0 20px 0;
-	}
-	.detalhesInfoTec {
-		margin: 20px 0 20px 0;
+	.content {
+		background-color: #fff;	
+		border-bottom: 3px solid #ccc;
+		box-shadow: 5px 0px 10px 0px #ccc;
+		position: relative;
+		z-index: 1;
+		.titulo {
+			padding: 70px 0 70px 40px;		
+		}
+		.imgProduto {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			max-height: 600px;
+			img {
+				max-width: 490px;
+				max-height: 600px;
+				position: relative;
+				left: 50%; top: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+		.detalhesInfoTec {
+			margin: 70px 0 70px 0;
+			.tab-content {
+				padding: 20px 15px;
+				border: 1px solid #ccc;
+				border-radius: 0px 0px 10px 10px;
+			}
+		}
 	}
 	.produtosRelacionados {
-		margin: 20px 0 20px 0;
-	}
-	.card-deck {
-		img { max-height: 220px; }
+		padding: 30px 0 30px 0;
+		background-color: $gray-lighter;
+		box-shadow: 5px 0px 10px 0px #ccc;
+		.produtosRelacionadosTitle {
+			margin: 20px 0 20px 0;
+		}	
+		.card-deck {
+			img { max-height: 220px; }
+		}
 	}
 }

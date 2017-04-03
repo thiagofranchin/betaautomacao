@@ -11,11 +11,11 @@
 				$posts_slides = new WP_Query(array(
 					//'post_type' => 'post',
 					'category_name' => 'Cabos Industriais',
-					'posts_per_page' => 4
+					'posts_per_page' => 5
 					));				
 				while ($posts_slides->have_posts()) : $posts_slides->the_post();
 				?>					
-				<div class="col-lg-3">
+				<div class="col-md">
 					<a href="<?php the_permalink(); ?>">
 						<div class="card">
 							<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Cabos Industriais">						
@@ -45,11 +45,11 @@
 				$posts_slides = new WP_Query(array(
 					//'post_type' => 'post',
 					'category_name' => 'Sensores',
-					'posts_per_page' => 4
+					'posts_per_page' => 5
 					));				
 				while ($posts_slides->have_posts()) : $posts_slides->the_post();
 				?>					
-				<div class="col-lg-3">
+				<div class="col-md">
 					<a href="<?php the_permalink(); ?>">
 						<div class="card">
 							<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Cabos Industriais" />						

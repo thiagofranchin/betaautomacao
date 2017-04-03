@@ -6870,6 +6870,11 @@ header {
     header .headerBoxRight p, header .headerBoxLeft p {
       color: #4C4C4C; }
 
+.menuPrincipalContent {
+  position: relative;
+  z-index: 2;
+  line-height: 40px; }
+
 .menuPrincipal {
   background-color: #424242 !important; }
   .menuPrincipal ul {
@@ -6913,19 +6918,47 @@ header {
     .categoriaPosts .card .card-footer {
       overflow: auto; }
 
-.siglePage .titulo {
-  margin: 20px 0 20px 0; }
-.siglePage .detalhesInfoTec {
-  margin: 20px 0 20px 0; }
+.siglePage .content {
+  background-color: #fff;
+  border-bottom: 3px solid #ccc;
+  box-shadow: 5px 0px 10px 0px #ccc;
+  position: relative;
+  z-index: 1; }
+  .siglePage .content .titulo {
+    padding: 70px 0 70px 40px; }
+  .siglePage .content .imgProduto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 600px; }
+    .siglePage .content .imgProduto img {
+      max-width: 490px;
+      max-height: 600px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .siglePage .content .detalhesInfoTec {
+    margin: 70px 0 70px 0; }
+    .siglePage .content .detalhesInfoTec .tab-content {
+      padding: 20px 15px;
+      border: 1px solid #ccc;
+      border-radius: 0px 0px 10px 10px; }
 .siglePage .produtosRelacionados {
-  margin: 20px 0 20px 0; }
-.siglePage .card-deck img {
-  max-height: 220px; }
+  padding: 30px 0 30px 0;
+  background-color: #EEEEEE;
+  box-shadow: 5px 0px 10px 0px #ccc; }
+  .siglePage .produtosRelacionados .produtosRelacionadosTitle {
+    margin: 20px 0 20px 0; }
+  .siglePage .produtosRelacionados .card-deck img {
+    max-height: 220px; }
 
 footer {
   background-color: #424242;
   color: #fff;
-  padding-top: 30px; }
+  padding-top: 30px;
+  position: relative;
+  z-index: 2; }
   footer .logoFooter {
     max-height: 130px;
     padding: 20px; }

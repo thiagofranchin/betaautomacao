@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
 <div class="container siglePage">
-	<div class="row">
+	<div class="row content">
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 		<div class="col-12 titulo">
 			<h2><?php the_title(); ?></h2>
 		</div>
-
+		<hr>
 		<div class="col-4 imgProduto">			
 			<img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>"/>	
 		</div>
@@ -45,9 +45,9 @@
 		<?php endif; ?>
 	</div>
 
-	<hr>
 	<!-- PRODUTOS RELACIONADOS -->
-	<div class="col-12 produtosRelacionados">	
+	<div class="row produtosRelacionados">
+	<div class="col-12 produtosRelacionadosTitle">	
 		<h3>Veja também</h3>
 	</div>
 	<div class="card-deck">
@@ -75,6 +75,8 @@
 		</div>
 		<?php endwhile; wp_reset_postdata();?>
 	</div>
+	</div>
+
 
 </div>
 

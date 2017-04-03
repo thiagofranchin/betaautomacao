@@ -1,3 +1,8 @@
+.menuPrincipalContent {
+	position: relative;
+	z-index: 2;
+	line-height: 40px;
+}
 .menuPrincipal {
 	background-color: $gray !important;
 	ul { background-color: $gray; }
