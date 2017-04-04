@@ -12,9 +12,16 @@ require get_template_directory() . '/src/inc/metabox.php';
 // Registrar Navigation Walker
 require_once('src/inc/wp_bootstrap_navwalker.php');
 register_nav_menus( array(
-    'primary' => __( 'Menu Principal', 'fktheme' ),
+    'primary' => __( 'menuPrincipal', 'Menu principal' ),
 ) );
 
+// Menu Categorias
+register_nav_menus( array(
+    'secondary' => __( 'Footer', 'Categorias principais' ),
+) );
+register_nav_menus( array(
+    'sidebarProdutos' => __( 'sidebarProdutos', 'Todas categorias' ),
+) );
 
 
 if ( function_exists('register_sidebar') )

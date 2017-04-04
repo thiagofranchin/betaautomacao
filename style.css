@@ -6930,7 +6930,9 @@ header {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    max-height: 600px; }
+    max-height: 600px;
+    margin-left: 15px;
+    margin-right: -15px; }
     .siglePage .content .imgProduto img {
       max-width: 490px;
       max-height: 598px;
@@ -6938,6 +6940,8 @@ header {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%); }
+  .siglePage .content .textoProduto {
+    padding-left: 30px; }
   .siglePage .content .detalhesInfoTec {
     margin: 70px 0 70px 0; }
     .siglePage .content .detalhesInfoTec .tab-content {
@@ -6962,6 +6966,10 @@ footer {
   footer .logoFooter {
     max-height: 130px;
     padding: 20px; }
+  footer .categoriasFooter ul {
+    padding: 0px; }
+  footer .categoriasFooter a {
+    color: white; }
   footer .copyright {
     background-color: #4C4C4C;
     height: 60px; }

@@ -8,6 +8,10 @@ footer {
 		max-height: 130px;
 		padding: 20px;
 	}
+	.categoriasFooter {
+		ul { padding: 0px; }
+		a { color: white; }
+	}
 	.copyright {
 		background-color: $gray-light;
 		height: 60px;
