@@ -34,6 +34,11 @@
                 'name' => __( 'Informações técnicas', 'textdomain' ),
                 'type' => 'textarea',
             ),
+            array(
+                'id'   => 'link-folder-comercial',
+                'name' => __( 'Link folder comercial Google Drive', 'textdomain' ),
+                'type' => 'textarea',
+            ),
         ),
     );
     return $meta_boxes;

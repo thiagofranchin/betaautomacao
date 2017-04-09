@@ -110,8 +110,8 @@ function show_related_posts_by_tag(){
         $my_query = new wp_query($args); 
         if( $my_query->have_posts() ) { 
  
-            echo '<h3>Veja Também</h3>'; 
-            echo '<div class="row"><div class="card-deck">';
+            echo '<div class="col-12 produtosRelacionadosTitle"><h3>Produtos relacionados</h3></div>'; 
+            echo '<div class="col-12"><div class="row"><div class="card-deck d-flex justify-content-between">';
  
             while ($my_query->have_posts()) { 
                 $my_query->the_post(); ?>                                 
@@ -130,7 +130,7 @@ function show_related_posts_by_tag(){
                         </a>
                     </div>
             <?php } 
-            echo '</div></div>'; 
+            echo '</div></div></div>'; 
             wp_reset_query(); //reseting custom query...
         } 
     } 

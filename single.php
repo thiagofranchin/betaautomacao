@@ -2,6 +2,12 @@
 
 <div class="container siglePage">
 	<div class="row content">
+		<nav class="breadcrumb col-12" typeof="BreadcrumbList" vocab="https://schema.org/">
+    	<?php if(function_exists('bcn_display'))
+    	{
+        	bcn_display();
+    	}?>
+		</nav>
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 			<div class="col-12 titulo">
@@ -54,13 +60,28 @@
 		<div class="col-8 detalhesInfoTec">
 
 			<!-- Nav tabs -->
-			<ul class="nav nav-tabs" role="tablist">
+			<ul class="nav nav-tabs d-flex justify-content-start" role="tablist">
 				<li class="nav-item">
 					<a class="nav-link active" data-toggle="tab" href="#detalhes" role="tab">Detalhes</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" data-toggle="tab" href="#info-tecnicas" role="tab">Informações Técnicas</a>
-				</li>			 
+				</li>
+					
+				<?php
+				$linkFolder = rwmb_meta('link-folder-comercial');
+
+				if($linkFolder){
+					echo '
+					<li class="nav-item ml-auto">
+						<a class="nav-link" target="_blank" href="'?><?php echo $linkFolder ?><?php echo '">
+							<i class="fa fa-cloud-download" aria-hidden="true"></i> Download do folder comercial
+						</a>
+					</li>';
+				}
+				?>
+
+				
 			</ul>
 
 			<!-- Tab panes -->
@@ -75,43 +96,47 @@
 			</div>
 		</div>
 	<?php endwhile; else: ?>
-<?php endif; ?>
-</div>
-
-<!-- PRODUTOS RELACIONADOS -->
-<div class="row produtosRelacionados">
-	<div class="col-12 produtosRelacionadosTitle">	
-		<h3>Veja também</h3>
+	<?php endif; ?>
 	</div>
-	<div class="card-deck">
-		<?php 
-		$posts_slides = new WP_Query(array(
-			'post_type' => 'post',
-				//'category_name' => 'Cabos Industriais',
-			'posts_per_page' => 6
-			));				
-		while ($posts_slides->have_posts()) : $posts_slides->the_post();
-		?>					
-		<div class="col-lg-2">
-			<a href="<?php the_permalink(); ?>">
-				<div class="card">
-					<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Cabos Industriais">						
-					<div class="card-block">
-						<h4 class="card-title"><?php the_title(); ?></h4>
-						<p class="card-text"><?php echo rwmb_meta('subtitulo'); ?></p>
-					</div>
-					<div class="card-footer">
-						<small class="text-muted"><?php echo rwmb_meta('resumo'); ?></small>
-					</div>
-				</div>
-			</a>
+
+	<!-- PRODUTOS RELACIONADOS -->
+	<div class="row produtosRelacionados">
+		<?php show_related_posts_by_tag(); ?>
+		
+		<div class="col-12 produtosRelacionadosTitle">
+			<hr>	
+			<h3>Veja também</h3>
 		</div>
-	<?php endwhile; wp_reset_postdata();?>
-</div>
-</div>
-<div class="col-12 produtosRelacionados">	
-	<?php show_related_posts_by_tag(); ?>
-</div> 
+		<div class="col-12">
+			<div class="row"> 
+				<div class="card-deck d-flex justify-content-between">
+					<?php 
+					$posts_slides = new WP_Query(array(
+						'post_type' => 'post',
+							//'category_name' => 'Cabos Industriais',
+						'posts_per_page' => 6
+						));				
+					while ($posts_slides->have_posts()) : $posts_slides->the_post();
+					?>					
+					<div class="col-lg-2">
+						<a href="<?php the_permalink(); ?>">
+							<div class="card">
+								<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Cabos Industriais">						
+								<div class="card-block">
+									<h4 class="card-title"><?php the_title(); ?></h4>
+									<p class="card-text"><?php echo rwmb_meta('subtitulo'); ?></p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted"><?php echo rwmb_meta('resumo'); ?></small>
+								</div>
+							</div>
+						</a>
+					</div>
+				<?php endwhile; wp_reset_postdata();?>
+				</div>	
+			</div>
+		</div>
+	</div>
 </div>
 
 <?php get_footer(); ?>
