@@ -1,22 +1,52 @@
 <?php get_header(); ?>
 
-<div class="container">
-	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+<div class="container categoryPage">
 	<div class="row">
 		
-		<div class="col-3">
-			<a href="<?php the_permalink(); ?>"><img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>"/></a>
-		</div>
-		<div class="col-5">			
-			<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
-			<h5><?php echo rwmb_meta('subtitulo'); ?></h5>
-			<p><?php echo rwmb_meta('resumo'); ?></p>
-		</div>
-		<div class="col-4"></div>	
+		<div class="col-8">
+			<div class="card-deck d-flex justify-content-between">
+			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+				<div class="col-lg-4">
+					<a href="<?php the_permalink(); ?>">
+						<div class="card">
+							<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Cabos Industriais">						
+							<div class="card-block">
+								<h4 class="card-title"><?php the_title(); ?></h4>
+								<p class="card-text"><?php echo rwmb_meta('subtitulo'); ?></p>
+							</div>
+							<div class="card-footer">
+								<small class="text-muted"><?php echo rwmb_meta('resumo'); ?></small>
+							</div>
+						</div>
+					</a>
+				</div>
 
+			<?php endwhile; else: ?>
+			<?php endif; ?>
+			</div>
+		</div>
+
+		<div class="col-4">
+			
+			<?php
+			wp_nav_menu( array(
+				'menu'              => 'secondary',
+				'theme_location'    => 'secondary',
+				'echo' 				=> true,
+				'container'         => 'div',
+				'container_id'   	=> '',
+				'container_class'   => 'list-group',
+				'before' 			=> '',
+				'a_class'			=> 'list-group-item list-group-item-action',					
+				'after' 			=> '',
+				'depth'				=> 3,
+				'walker'			=> '')
+			);
+			?>
+
+		</div>	
 	</div>
-	<?php endwhile; else: ?>
-	<?php endif; ?>
+	
 
 
 	<?php wordpress_pagination(); ?>
@@ -24,3 +54,7 @@
 </div>
 
 <?php get_footer(); ?>
+
+
+
+
