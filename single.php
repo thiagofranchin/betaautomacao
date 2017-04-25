@@ -59,18 +59,33 @@
 
 		<div class="col-8 detalhesInfoTec">
 
-			<!-- Nav tabs -->
-			<ul class="nav nav-tabs d-flex justify-content-start" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link active" data-toggle="tab" href="#detalhes" role="tab">Detalhes</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" data-toggle="tab" href="#info-tecnicas" role="tab">Informações Técnicas</a>
-				</li>
-					
-				<?php
-				$linkFolder = rwmb_meta('link-folder-comercial');
+			<?php 
+			$detalhes = rwmb_meta('detalhes');
+			$infoTecnicas = rwmb_meta('info-tecnicas');
+			$linkFolder = rwmb_meta('link-folder-comercial');
 
+			if($detalhes || $infoTecnicas || $linkFolder){
+				echo '<ul class="nav nav-tabs d-flex justify-content-start" role="tablist">';
+			
+			
+				if($detalhes){
+					echo '
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#detalhes" role="tab">Detalhes</a>
+					</li>';
+				}
+				if(!$detalhes && $infoTecnicas){
+					echo '
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#info-tecnicas" role="tab">Informações Técnicas</a>
+					</li>';
+				}elseif($infoTecnicas) {
+					echo '
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#info-tecnicas" role="tab">Informações Técnicas</a>
+					</li>';
+				}
+			
 				if($linkFolder){
 					echo '
 					<li class="nav-item ml-auto">
@@ -78,22 +93,42 @@
 							<i class="fa fa-cloud-download" aria-hidden="true"></i> Download do folder comercial
 						</a>
 					</li>';
-				}
-				?>
-
-				
-			</ul>
-
-			<!-- Tab panes -->
-			<div class="tab-content">
-				<div class="tab-pane active" id="detalhes" role="tabpanel">
-					<pre><?php echo rwmb_meta('detalhes'); ?></pre>
-
+				}				
+				echo '</ul>';
+			}
+			?>
+			
+			<?php 
+			if($detalhes && $infoTecnicas){
+				echo '
+				<div class="tab-content">
+					<div class="tab-pane active" id="detalhes" role="tabpanel">
+						<pre>'?><?php echo rwmb_meta('detalhes'); ?><?php echo '</pre>
+					</div>
+					<div class="tab-pane" id="info-tecnicas" role="tabpanel">
+						<pre>'?><?php echo rwmb_meta('info-tecnicas'); ?><?php echo '</pre>
+					</div>
 				</div>
-				<div class="tab-pane" id="info-tecnicas" role="tabpanel">
-					<pre><?php echo rwmb_meta('info-tecnicas'); ?></pre>
+				';
+			}elseif($detalhes && !$infoTecnicas){
+				echo '
+				<div class="tab-content">
+					<div class="tab-pane active" id="detalhes" role="tabpanel">
+						<pre>'?><?php echo rwmb_meta('detalhes'); ?><?php echo '</pre>
+					</div>
 				</div>
-			</div>
+				';
+			}elseif(!$detalhes && $infoTecnicas){
+				echo '
+				<div class="tab-content">
+					<div class="tab-pane active" id="info-tecnicas" role="tabpanel">
+						<pre>'?><?php echo rwmb_meta('info-tecnicas'); ?><?php echo '</pre>
+					</div>
+				</div>
+				';
+			}
+			?>
+			
 		</div>
 	<?php endwhile; else: ?>
 	<?php endif; ?>
@@ -101,40 +136,29 @@
 
 	<!-- PRODUTOS RELACIONADOS -->
 	<div class="row produtosRelacionados">
+		<!-- LISTA POSTS POR TAGS -->
 		<?php show_related_posts_by_tag(); ?>
 		
 		<div class="col-12 produtosRelacionadosTitle">
 			<hr>	
-			<h3>Veja também</h3>
+			<h3>Categorias em formato de nuvem de tag</h3>
 		</div>
-		<div class="col-12">
-			<div class="row"> 
-				<div class="card-deck d-flex justify-content-between">
-					<?php 
-					$posts_slides = new WP_Query(array(
-						'post_type' => 'post',
-							//'category_name' => 'Cabos Industriais',
-						'posts_per_page' => 6
-						));				
-					while ($posts_slides->have_posts()) : $posts_slides->the_post();
-					?>					
-					<div class="col-lg-2">
-						<a href="<?php the_permalink(); ?>">
-							<div class="card">
-								<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="Cabos Industriais">						
-								<div class="card-block">
-									<h4 class="card-title"><?php the_title(); ?></h4>
-									<p class="card-text"><?php echo rwmb_meta('subtitulo'); ?></p>
-								</div>
-								<div class="card-footer">
-									<small class="text-muted"><?php echo rwmb_meta('resumo'); ?></small>
-								</div>
-							</div>
-						</a>
-					</div>
-				<?php endwhile; wp_reset_postdata();?>
-				</div>	
-			</div>
+		<div class="col-12 col-12 d-flex justify-content-center flex-wrap">
+			
+				<?php
+				//echo get_the_tag_list('<span class="badge badge-primary">Tags: ',', ','</span>');
+				$args=array(
+				'orderby' => 'name',
+				'order' => 'ASC'
+				);
+				$categories=get_categories($args);
+				foreach($categories as $category) {
+				echo '<span class="badge badge-primary">
+					<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "Ver postagens em %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> ';
+				// echo '<br />'. $category->description . ' ';
+				echo '('. $category->count . ')</span>';  }
+				?>
+						
 		</div>
 	</div>
 </div>

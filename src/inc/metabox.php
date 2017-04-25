@@ -36,7 +36,7 @@
             ),
             array(
                 'id'   => 'link-folder-comercial',
-                'name' => __( 'Link folder comercial Google Drive', 'textdomain' ),
+                'name' => __( 'Link folder comercial', 'textdomain' ),
                 'type' => 'textarea',
             ),
         ),

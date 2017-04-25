@@ -49,5 +49,14 @@
 		.card-deck {
 			img { max-height: 220px; }
 		}
+		.badge {
+			background-color: #568dca;
+    		padding: 10px;
+    		margin: 0 5px 10px 5px;
+    		font-size: 20px;
+			a {
+				color: #fff;
+			}
+		}
 	}
 }
