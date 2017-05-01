@@ -1,5 +1,26 @@
 $(document).ready(function() {
-	
+	//MENU PRINCIPAL
+		//CABOS MENU
+		$('.menuPrincipalContent .menuPrincipal #navbarSupportedContent #menu-menu-principal #menu-item-43 ul #menu-item-17').mouseover(function() {
+			$(this).addClass("show");
+		}).mouseout(function() {
+			$( this ).removeClass("show");
+		});
+
+		//SENSORES MENU
+		$('.menuPrincipalContent .menuPrincipal #navbarSupportedContent #menu-menu-principal #menu-item-43 ul #menu-item-23').mouseover(function() {
+			$(this).addClass("show");
+		}).mouseout(function() {
+			$( this ).removeClass("show");
+		});		
+
+		//SENSORES MENU
+		$('.menuPrincipalContent .menuPrincipal #navbarSupportedContent #menu-menu-principal #menu-item-43 ul #menu-item-27').mouseover(function() {
+			$(this).addClass("show");
+		}).mouseout(function() {
+			$( this ).removeClass("show");
+		});
+
 	$('form').submit(function(){
 		var nome = $(':input[name=nome]').val();
 		var email = $(':input[name=email]').val();
@@ -7,9 +28,6 @@ $(document).ready(function() {
 		var produto = $(':input[name=produto]').val();
 		var mensagem = $(':input[name=mensagem]').val();
 		
-		//ERROR
-		
-
 		//NOME
 		var errorNome = "";
 		$('#errorNome').html("");
@@ -26,19 +44,10 @@ $(document).ready(function() {
 		if(email === "") {
 			error += "Preencha o campo";
 		}
-		//TELEFONE
-		//PRODUTO
-		//MENSAGEM
-
-
-
-
 		if(error) {
 			$('#error').html(error);
 			return false;
 		}
-
 		return true;
 	});
-
 });

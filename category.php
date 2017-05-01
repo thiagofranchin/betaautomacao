@@ -16,11 +16,13 @@
 					$url = explode('/', $url);		
 					$parteurldesejada = $url[3];		
 					$parteurldesejada = str_replace('-',' ',$parteurldesejada);
-					if($parteurldesejada == 'reles' || $parteurldesejada == 'inversor de frequencia'){
+					if($parteurldesejada == 'reles' || $parteurldesejada == 'inversores de frequencia' || $parteurldesejada == 'transmissores de pressao'){
 						if($parteurldesejada == 'reles'){
 							$parteurldesejada = 'Réles';
+						}elseif($parteurldesejada == 'inversores de frequencia'){
+							$parteurldesejada = 'Inversores de Frequência';
 						}else{
-							$parteurldesejada = 'Inversor De Frequência';
+							$parteurldesejada = 'Transmissores de Pressão';
 						}
 					}
 					echo $parteurldesejada;

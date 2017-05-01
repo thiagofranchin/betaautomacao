@@ -6873,22 +6873,34 @@ header {
   position: relative;
   z-index: 2;
   line-height: 40px; }
-
-.menuPrincipal {
-  background-color: #424242 !important; }
-  .menuPrincipal ul {
-    background-color: #424242; }
-  .menuPrincipal a {
-    color: #fff; }
-  .menuPrincipal .logoNavbar {
-    max-height: 50px; }
-  @media (max-width: 991px) {
-    .menuPrincipal {
-      position: fixed;
-      right: 0px;
-      left: 0px;
-      top: 0px;
-      z-index: 1030; } }
+  .menuPrincipalContent .menuPrincipal {
+    background-color: #424242 !important; }
+    .menuPrincipalContent .menuPrincipal ul {
+      background-color: #424242; }
+    .menuPrincipalContent .menuPrincipal a {
+      color: #fff; }
+    .menuPrincipalContent .menuPrincipal .logoNavbar {
+      max-height: 50px; }
+    @media (max-width: 991px) {
+      .menuPrincipalContent .menuPrincipal {
+        position: fixed;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        z-index: 1030; } }
+    @media (min-width: 992px) {
+      .menuPrincipalContent .menuPrincipal #menu-item-17 ul {
+        position: absolute;
+        top: -3px;
+        left: 238px; }
+      .menuPrincipalContent .menuPrincipal #menu-item-23 ul {
+        position: absolute;
+        top: 165px;
+        left: 238px; }
+      .menuPrincipalContent .menuPrincipal #menu-item-27 ul {
+        position: absolute;
+        top: 275px;
+        left: 238px; } }
 
 .slideHome {
   background-color: #fff; }
@@ -6998,8 +7010,7 @@ footer {
   background-color: #424242;
   color: #fff;
   padding-top: 30px;
-  position: relative;
-  z-index: 2; }
+  position: relative; }
   footer .logoFooter {
     max-height: 130px;
     padding: 20px; }

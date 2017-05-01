@@ -2,19 +2,45 @@
 	position: relative;
 	z-index: 2;
 	line-height: 40px;
-}
-.menuPrincipal {
-	background-color: $gray !important;
-	ul { background-color: $gray; }
-	a { color: $white; }
-	.logoNavbar {
-		max-height: 50px;		
-	}
-	@media (max-width: 991px) {
-		position: fixed;
-		right: 0px;
-		left: 0px;
-		top: 0px;
-		z-index: 1030;		
-	}
+	.menuPrincipal {
+		background-color: $gray !important;
+		ul { background-color: $gray; }
+		a { color: $white; }
+		.logoNavbar {
+			max-height: 50px;		
+		}
+		@media (max-width: 991px) {
+			position: fixed;
+			right: 0px;
+			left: 0px;
+			top: 0px;
+			z-index: 1030;		
+		}
+		@media (min-width: 992px) {
+			// CABOS INDUSTRIAIS
+			#menu-item-17 {
+				ul {
+					position: absolute;
+					top: -3px;
+					left: 238px;
+				}
+			}
+			// PRESSOSTATOS
+			#menu-item-23 {
+				ul {
+					position: absolute;
+					top: 165px;
+					left: 238px;
+				}
+			}
+			// SENSORES
+			#menu-item-27 {
+				ul {
+					position: absolute;
+					top: 275px;
+					left: 238px;
+				}
+			}			
+		}
+	}	
 }
