@@ -21,6 +21,9 @@ $(document).ready(function() {
 			$( this ).removeClass("show");
 		});
 
+		// $('#menu-menu-principal #menu-item-43 ul').addClass('list-group');
+		// $('#menu-menu-principal #menu-item-43 ul li a').addClass('list-group-item list-group-item-action');
+
 	$('form').submit(function(){
 		var nome = $(':input[name=nome]').val();
 		var email = $(':input[name=email]').val();

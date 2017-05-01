@@ -6889,18 +6889,21 @@ header {
         top: 0px;
         z-index: 1030; } }
     @media (min-width: 992px) {
+      .menuPrincipalContent .menuPrincipal #menu-menu-principal #menu-item-43 ul {
+        position: absolute;
+        left: 80px; }
       .menuPrincipalContent .menuPrincipal #menu-item-17 ul {
         position: absolute;
         top: -3px;
-        left: 238px; }
+        left: 238px !important; }
       .menuPrincipalContent .menuPrincipal #menu-item-23 ul {
         position: absolute;
         top: 165px;
-        left: 238px; }
+        left: 238px !important; }
       .menuPrincipalContent .menuPrincipal #menu-item-27 ul {
         position: absolute;
         top: 275px;
-        left: 238px; } }
+        left: 238px !important; } }
 
 .slideHome {
   background-color: #fff; }

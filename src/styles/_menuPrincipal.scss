@@ -17,12 +17,16 @@
 			z-index: 1030;		
 		}
 		@media (min-width: 992px) {
+			#menu-menu-principal #menu-item-43 ul {
+				position: absolute;
+				left: 80px;
+			}
 			// CABOS INDUSTRIAIS
 			#menu-item-17 {
 				ul {
 					position: absolute;
 					top: -3px;
-					left: 238px;
+					left: 238px !important;
 				}
 			}
 			// PRESSOSTATOS
@@ -30,7 +34,7 @@
 				ul {
 					position: absolute;
 					top: 165px;
-					left: 238px;
+					left: 238px !important;
 				}
 			}
 			// SENSORES
@@ -38,7 +42,7 @@
 				ul {
 					position: absolute;
 					top: 275px;
-					left: 238px;
+					left: 238px !important;
 				}
 			}			
 		}
