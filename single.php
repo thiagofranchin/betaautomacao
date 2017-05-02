@@ -14,10 +14,10 @@
 				<h2><?php the_title(); ?></h2>
 			</div>
 			<hr>
-			<div class="col-4 imgProduto">			
+			<div class="col-3 imgProduto">			
 				<img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>"/>	
 			</div>
-			<div class="col-4 textoProduto">
+			<div class="col-5 textoProduto">
 				<?php the_content(); ?>
 			</div>
 			<div class="col-4 formularioSinglePage">
