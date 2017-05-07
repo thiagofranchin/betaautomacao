@@ -18,8 +18,12 @@
 			while ($posts_slides->have_posts()) : $posts_slides->the_post();
 			?>
 
-			<div class="carousel-item <?php if($i == 1) echo 'active'; ?>">
-				<img class="img-fluid d-block mx-auto" src="<?php the_post_thumbnail_url(); ?>"/>
+			<div class="carousel-item <?php if($i == 1) echo 'active'; ?>">						
+				<a href="<?php //the_permalink(); ?>">
+					<img class="img-fluid d-block mx-auto" src="<?php // the_post_thumbnail_url(); ?>"/>								
+					<img class="img-fluid d-block mx-auto" src="http://srv82.teste.website/~betadavi/wp-content/uploads/2017/05/slide-03_1.png"/>								
+				</a>
+		
 			</div>
 			<?php $i++; endwhile; wp_reset_postdata();?>
 
