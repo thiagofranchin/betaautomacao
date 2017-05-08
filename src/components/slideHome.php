@@ -19,7 +19,9 @@
 			?>
 
 			<div class="carousel-item <?php if($i == 1) echo 'active'; ?>">
-				<img class="img-fluid d-block mx-auto" src="<?php the_post_thumbnail_url(); ?>"/>
+				<a href="<?php the_title(); ?>">
+					<img class="img-fluid d-block mx-auto" src="<?php the_post_thumbnail_url(); ?>"/>
+				</a>
 			</div>
 			<?php $i++; endwhile; wp_reset_postdata();?>
 

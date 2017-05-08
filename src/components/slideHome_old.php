@@ -23,6 +23,11 @@
 					<img class="img-fluid d-block mx-auto" src="<?php // the_post_thumbnail_url(); ?>"/>								
 					<img class="img-fluid d-block mx-auto" src="http://srv82.teste.website/~betadavi/wp-content/uploads/2017/05/slide-03_1.png"/>								
 				</a>
+				<div class="carousel-caption d-none d-md-block">		
+ -					<h3><?php the_title(); ?></h3>		
+ -					<a href="<?php the_permalink(); ?>" type="button" class="btn btn-md btn-success"><?php echo rwmb_meta('subtitulo'); ?></a>		
+ -					<p><?php echo rwmb_meta('resumo'); ?></p>								
+ -				</div>
 		
 			</div>
 			<?php $i++; endwhile; wp_reset_postdata();?>
