@@ -1,4 +1,4 @@
-".sass-cache/
+.sass-cache/
 _bkp_original/
 _material/
 node_modules/
@@ -6,3 +6,4 @@ Plugins-AJUSTES/
 .vscode/
 npm-debug.log
 npm-debug.log*
+

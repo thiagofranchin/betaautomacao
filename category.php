@@ -52,22 +52,37 @@
 		</div>
 
 		<div class="col-4">
-			
-			<?php
-			wp_nav_menu( array(
-				'menu'              => 'secondary',
-				'theme_location'    => 'secondary',
-				'echo' 				=> true,
-				'container'         => 'div',
-				'container_id'   	=> '',
-				'container_class'   => 'list-group',
-				'before' 			=> '',
-				'a_class'			=> 'list-group-item list-group-item-action',					
-				'after' 			=> '',
-				'depth'				=> 3,
-				'walker'			=> '')
-			);
-			?>
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="tab" href="#produtos" role="tab">Produtos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#marcas" role="tab">Marcas</a>
+				</li>				
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane active" id="produtos" role="tabpanel">
+					<?php
+					wp_nav_menu( array(
+						'menu'              => 'secondary',
+						'theme_location'    => 'secondary',
+						'echo' 				=> true,
+						'container'         => 'div',
+						'container_id'   	=> '',
+						'container_class'   => 'list-group',
+						'before' 			=> '',
+						'a_class'			=> 'list-group-item list-group-item-action',					
+						'after' 			=> '',
+						'depth'				=> 3,
+						'walker'			=> '')
+					);
+					?>
+				</div>
+				<div class="tab-pane" id="marcas" role="tabpanel">
+					MENU MARCAS
+				</div>
+			</div>			
 
 		</div>	
 	</div>

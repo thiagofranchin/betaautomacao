@@ -17,6 +17,13 @@
 			z-index: 1030;		
 		}
 		@media (min-width: 992px) {
+			//MARCAS
+			#menu-menu-principal #menu-item-72 ul {
+				position: absolute;
+				left: 160px;
+			}
+			
+			//PRODUTOS
 			#menu-menu-principal #menu-item-43 ul {
 				position: absolute;
 				left: 80px;
