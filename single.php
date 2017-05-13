@@ -27,7 +27,7 @@
 				<!-- <input type="hidden" name="recipient" value="contato@franchin.com.br"/>
 				<input type="hidden" name="subject" value="Formulário FormMail"/><input type="hidden" name="redirect" value="http://192.185.217.158/~davicallegari/contato"/> -->
 
-				<h2>Faça seu Orçamento</h2>
+				<h3>Faça seu Orçamento</h3>
 
 				<div class="form-group">
 					<label for="nome">Nome:</label>
