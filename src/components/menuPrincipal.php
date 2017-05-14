@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<nav class="navbar navbar-toggleable-md bg-inverse menuPrincipal col-12">
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"  data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="col-4 hidden-lg-up">	
@@ -10,24 +10,60 @@
 				</a>
 			</div>
 			<?php
-			wp_nav_menu( array(
-				'menu'              => 'primary',
-				'theme_location'    => 'primary',
-				'depth'             => 4,
-				'container'         => 'div',
-				'container_class'   => 'collapse navbar-collapse',
-				'container_id'      => 'navbarSupportedContent',
-				'menu_class'        => 'navbar-nav mr-auto',
-				'li_class'			=> 'nav-item',
-				'a_class'			=> 'nav-link',
-				'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-				'walker'            => new wp_bootstrap_navwalker())
-			);
+			// wp_nav_menu( array(
+			// 	'menu'              => 'primary',
+			// 	'theme_location'    => 'primary',
+			// 	'depth'             => 4,
+			// 	'container'         => 'div',
+			// 	'container_class'   => 'collapse navbar-collapse',
+			// 	'container_id'      => 'navbarText',
+			// 	'menu_class'        => 'navbar-nav mr-auto',
+			// 	'li_class'			=> 'nav-item',
+			// 	'a_class'			=> 'nav-link',
+			// 	'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+			// 	'walker'            => new wp_bootstrap_navwalker())
+			//);
 			?>
 
+			<?php $pages = get_pages(array('sort_column' =>'menu_order')); ?>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto" id="navbarText">
+
+					<li class="nav-item"><a href="<?php echo(bloginfo("url")); ?>"><i class="halflings white home"></i> Home</a></li>
+					<li class="nav-item"><a href="#">Produtos</a>
+						<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>23) ); ?></ul>
+					</li>
+					
+					<!--<li class="nav-item"><a href="#">Marcas</a>
+						<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>28)); ?></ul>								
+					</li>-->
+					<!--<li class="nav-item"><a href="#">TESTE</a>
+						<ul class="subMenu"><?php wp_list_categories( array( 'title_li' => '', 'current_category' => 'All' ) ); ?></ul>								
+					</li>-->
+
+					<?php foreach($pages as $page){ ?>
+
+						<li class="nav-item"><a href="<?php echo(get_permalink($page->ID)); ?>"><?php echo($page->post_title); ?></a></li>
+
+					<?php } ?>
+					<li class="searchProduct">
+						<?php //get_search_form() ?>
+					</li>
+				</ul>
+			</div>
 			<?php
 			//get_search_form();
 			?>
 		</nav>
+
+
+
+
 	</div>
 </div>
+
+	
+	
+	
+	
+	

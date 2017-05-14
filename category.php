@@ -10,7 +10,7 @@
 		</nav>
 		<div class="col-8">
 			<div class="col-12 titulo">
-				<h2>
+				<h1>
 					<?php 	
 					$url= $_SERVER['REQUEST_URI'];					
 					$url = explode('/', $url);		
@@ -27,7 +27,7 @@
 					}
 					echo $parteurldesejada;
 					?>
-				</h2>
+				</h1>
 			</div>
 			<div class="card-deck d-flex justify-content-between">
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>			

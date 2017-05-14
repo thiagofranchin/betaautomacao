@@ -4,7 +4,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+	<title>
+		<?php 
+			$titlepage = wp_title('');
+			if($titlepage){												
+				echo $titlepage . ' - ';
+			}			
+		?>
+		<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?> 
+	</title>
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/node_modules/animate.css/animate.min.css">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />	

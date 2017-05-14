@@ -17,41 +17,27 @@
 			z-index: 1030;		
 		}
 		@media (min-width: 992px) {
-			//MARCAS
-			#menu-menu-principal #menu-item-72 ul {
+			.subMenu, .children {
+				a {
+					color: #777;
+					font-size: 14px;
+					line-height: 30px;					
+					border-top: 1px solid #e6e6e6;
+    				display: block;
+				}
+			}
+			.subMenu {
 				position: absolute;
-				left: 160px;
-			}
-			
-			//PRODUTOS
-			#menu-menu-principal #menu-item-43 ul {
-				position: absolute;
-				left: 80px;
-			}
-			// CABOS INDUSTRIAIS
-			#menu-item-17 {
-				ul {
-					position: absolute;
-					top: -3px;
-					left: 238px !important;
+				-webkit-padding-start: 10px 20px; 
+				padding: 10px 20px;
+				.children {					
+					-webkit-padding-start: 10px 20px;
+					padding: 10px 20px;
+					right: -243px;
+					position: relative;
+					top: -50px;
 				}
 			}
-			// PRESSOSTATOS
-			#menu-item-23 {
-				ul {
-					position: absolute;
-					top: 165px;
-					left: 238px !important;
-				}
-			}
-			// SENSORES
-			#menu-item-27 {
-				ul {
-					position: absolute;
-					top: 275px;
-					left: 238px !important;
-				}
-			}			
 		}
 	}	
 }
