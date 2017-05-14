@@ -17,6 +17,14 @@
 			z-index: 1030;		
 		}
 		@media (min-width: 992px) {
+			.nav-item {
+				margin-right: 15px;
+				&:hover {
+					.subMenu {
+						display: block;
+					}
+				}
+			}
 			.subMenu, .children {
 				a {
 					color: #777;
@@ -28,14 +36,28 @@
 			}
 			.subMenu {
 				position: absolute;
-				-webkit-padding-start: 10px 20px; 
-				padding: 10px 20px;
+				-webkit-padding-start: 10px 0px; 
+				padding: 10px 0px;
+				display: none;
 				.children {					
-					-webkit-padding-start: 10px 20px;
-					padding: 10px 20px;
-					right: -243px;
+					-webkit-padding-start: 10px 0px;
+					padding: 10px 0px;
+					right: -230px;
 					position: relative;
-					top: -50px;
+					top: -41px;
+					display: none;
+				}
+				li { 
+					height: 32px;
+					width: 230px;
+					&:hover {
+						.children {
+							display: block;
+						}
+					}
+					a {
+						padding-left: 15px;
+					}
 				}
 			}
 		}

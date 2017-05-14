@@ -34,9 +34,9 @@
 						<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>23) ); ?></ul>
 					</li>
 					
-					<!--<li class="nav-item"><a href="#">Marcas</a>
+					<li class="nav-item"><a href="#">Marcas</a>
 						<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>28)); ?></ul>								
-					</li>-->
+					</li>
 					<!--<li class="nav-item"><a href="#">TESTE</a>
 						<ul class="subMenu"><?php wp_list_categories( array( 'title_li' => '', 'current_category' => 'All' ) ); ?></ul>								
 					</li>-->
