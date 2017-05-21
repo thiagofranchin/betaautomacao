@@ -2,10 +2,24 @@
 	position: relative;
 	z-index: 2;
 	line-height: 40px;
+	.navbar{
+		padding: 0px;
+	}
 	.menuPrincipal {
 		background-color: $gray !important;
-		ul { background-color: $gray; }
+		ul {   
+			background-color: #424242;
+    	font-size: 18px;
+    	text-transform: uppercase;
+    	font-weight: 400; 
+			border-left: 1px solid #5c5c5c;
+		}
 		a { color: $white; }
+		a:hover { 
+			background-color: #646464;
+			text-decoration: none;
+		}
+		
 		.logoNavbar {
 			max-height: 50px;		
 		}
@@ -18,8 +32,11 @@
 		}
 		@media (min-width: 992px) {
 			.nav-item {
-				margin-right: 15px;
+				padding: 15px 30px 15px 30px;
+   			border-right: 1px solid #5c5c5c;
 				&:hover {
+						background-color: #646464;
+						text-decoration: none;
 					.subMenu {
 						display: block;
 					}
@@ -27,28 +44,29 @@
 			}
 			.subMenu, .children {
 				a {
-					color: #777;
-					font-size: 14px;
+					color: white;
+					font-size: 17px;
+					text-transform: uppercase;
 					line-height: 30px;					
 					border-top: 1px solid #e6e6e6;
-    				display: block;
+    			display: block;
 				}
 			}
 			.subMenu {
 				position: absolute;
-				-webkit-padding-start: 10px 0px; 
-				padding: 10px 0px;
+				-webkit-padding-start: 15px 15px; 
+				padding: 15px 15px;
 				display: none;
 				.children {					
-					-webkit-padding-start: 10px 0px;
-					padding: 10px 0px;
-					right: -230px;
+					-webkit-padding-start: 15px 15px ;
+					padding: 15px 15px;
+					right: -280px;
 					position: relative;
-					top: -41px;
+					top: -40px;
 					display: none;
 				}
 				li { 
-					height: 32px;
+					height: 50px;
 					width: 230px;
 					&:hover {
 						.children {
@@ -63,3 +81,10 @@
 		}
 	}	
 }
+
+
+
+
+
+
+

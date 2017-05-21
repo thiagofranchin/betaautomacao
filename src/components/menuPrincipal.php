@@ -29,21 +29,26 @@
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav mr-auto" id="navbarText">
 
-					<li class="nav-item"><a href="<?php echo(bloginfo("url")); ?>"><i class="halflings white home"></i> Home</a></li>
-					<li class="nav-item"><a href="#">Produtos</a>
+					<a href="<?php echo(bloginfo("url")); ?>"><i class="halflings white home"><li class="nav-item"></i> Home</li></a>
+				
+					<a href="#"><li class="nav-item">Produtos
 						<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>23) ); ?></ul>
-					</li>
+					</li></a>
+						
 					
-					<li class="nav-item"><a href="#">Marcas</a>
-						<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>28)); ?></ul>								
-					</li>
+					
+					<a href="#"><li class="nav-item">Marcas	
+					<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>28)); ?></ul>						
+					</li>	</a>	
+						
+					
 					<!--<li class="nav-item"><a href="#">TESTE</a>
 						<ul class="subMenu"><?php wp_list_categories( array( 'title_li' => '', 'current_category' => 'All' ) ); ?></ul>								
 					</li>-->
 
 					<?php foreach($pages as $page){ ?>
 
-						<li class="nav-item"><a href="<?php echo(get_permalink($page->ID)); ?>"><?php echo($page->post_title); ?></a></li>
+						<a href="<?php echo(get_permalink($page->ID)); ?>"><li class="nav-item"><?php echo($page->post_title); ?></li></a>
 
 					<?php } ?>
 					<li class="searchProduct">

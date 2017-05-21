@@ -27,8 +27,8 @@
 				<!-- <input type="hidden" name="recipient" value="contato@franchin.com.br"/>
 				<input type="hidden" name="subject" value="Formulário FormMail"/><input type="hidden" name="redirect" value="http://192.185.217.158/~davicallegari/contato"/> -->
 
-				<h3>Faça um orçamento</h3>
-						<p>Estamos dispostos a negociar</p>
+				<h3>Faça um orçamento, estamos dispostos a negociar</h3>
+						
 
 				<div class="form-group">
 					<label for="nome">Nome:</label>
@@ -53,7 +53,7 @@
 					<textarea name="mensagem" placeholder="Digite aqui sua mensagem" class="form-control"></textarea>
 				</div>
 
-				<button type="submit" name="Submit" class="btn btn-success btn-md">Enviar</button>
+				<button type="submit" name="Submit" class="btn btn-success btn-lg btn-block">Solicitar orçamento</button>
 
 			</form>
 		</div>

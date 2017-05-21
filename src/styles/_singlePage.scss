@@ -1,6 +1,9 @@
 .siglePage {
 	
-	h1{font-size: 2.3rem;}
+	h1{
+		font-size: 2.3rem;
+		font-weight: 400;
+	}
 	
 	.content {
 		background-color: #fff;	
@@ -9,15 +12,20 @@
 		position: relative;
 		z-index: 1;
 		.breadcrumb {
-			margin-top: 20px;
+			margin-top: 10px;
 			background-color: #fff;
+			margin-bottom: 5px;
+			font-size:15px;
+			padding-left: 30px;
 		}
 		.titulo {
-			padding: 15px 0 60px 15px;
-			color: $gray;		
+			padding: 10px 0 40px 30px;
+			color: $gray;	
+			border-bottom: solid 1px #ddd;
+			margin-bottom: 40px;
 		}
 		.imgProduto {
-			padding-left: 0px;
+			padding-left: 20px;
 			padding-right: 0px;
 			margin-left: 15px;
 			margin-right: -15px;
@@ -33,13 +41,26 @@
 							
 			}
 		}
-		.textoProduto { padding-left: 30px; }
+		.textoProduto {     
+				padding-left: 40px;
+				padding-right: 50px; 
+		}
+		
+		.col-8 {
+			    flex: 0 0 62.36667%;
+    			max-width: 62.36667%;
+		}
+		
 		.detalhesInfoTec {
-			margin: 70px 0 70px 0;
+				margin: 0px 0 70px 30px;
 			.tab-content {
 				padding: 20px 15px;
 				border: 1px solid #ccc;
 				border-radius: 0px 0px 10px 10px;
+			}
+			.nav-link {
+				font-size: 20px;
+    		font-weight: 500;
 			}
 			pre {
 				font-family: lato;
@@ -49,10 +70,23 @@
 	}
 	
 	.formularioSinglePage{
-		background: #e6e6e6;
+		background: #eee;
     padding: 20px;
+		margin-top: -40px;
+		h3 { 
+			text-align: center;
+		}
 		
 	}
+	
+	label{ margin-bottom: 0px}
+	
+	.btn-success{
+		font-size: 20px;
+    font-weight: bold;
+		text-transform: uppercase;
+	}
+	
 	.produtosRelacionados {
 		padding: 10px 0 30px 0;
 		background-color: $gray-lighter;
@@ -75,5 +109,11 @@
 		}
 	}
 }
+
+
+
+
+
+
 
 
