@@ -14,7 +14,17 @@
 					<?php 	
 					$url= $_SERVER['REQUEST_URI'];					
 					$url = explode('/', $url);		
-					$parteurldesejada = $url[3];		
+					$parteurldesejada = $url[4];
+					if($url[5]){
+						if($url[5] == 'cabos-hibridos'){
+							$url[5] = 'Cabos Híbridos';
+						}elseif($url[5] == 'sensor-de-area'){
+							$url[5] = 'Sensor de Área';
+						}else{
+							$url[5] = 'Sensor Fotoelétrico';
+						}
+						$parteurldesejada .= " / " . $url[5];
+					}
 					$parteurldesejada = str_replace('-',' ',$parteurldesejada);
 					if($parteurldesejada == 'reles' || $parteurldesejada == 'inversores de frequencia' || $parteurldesejada == 'transmissores de pressao'){
 						if($parteurldesejada == 'reles'){

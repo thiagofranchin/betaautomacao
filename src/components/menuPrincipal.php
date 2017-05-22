@@ -29,18 +29,21 @@
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav mr-auto" id="navbarText">
 
-					<a href="<?php echo(bloginfo("url")); ?>"><i class="halflings white home"><li class="nav-item"></i> Home</li></a>
+					<a href="<?php echo(bloginfo("url")); ?>">
+						<li class="nav-item"> Home</li>
+					</a>
 				
-					<a href="#"><li class="nav-item">Produtos
-						<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>23) ); ?></ul>
-					</li></a>
-						
+					<a href="#">
+						<li class="nav-item">Produtos
+							<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>23) ); ?></ul>
+						</li>
+					</a>
 					
-					
-					<a href="#"><li class="nav-item">Marcas	
-					<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>28)); ?></ul>						
-					</li>	</a>	
-						
+					<a href="#">
+						<li class="nav-item">Marcas	
+							<ul class="subMenu"><?php wp_list_categories( array("title_li"=>"","child_of"=>28)); ?></ul>						
+						</li>
+					</a>						
 					
 					<!--<li class="nav-item"><a href="#">TESTE</a>
 						<ul class="subMenu"><?php wp_list_categories( array( 'title_li' => '', 'current_category' => 'All' ) ); ?></ul>								
@@ -60,10 +63,6 @@
 			//get_search_form();
 			?>
 		</nav>
-
-
-
-
 	</div>
 </div>
 

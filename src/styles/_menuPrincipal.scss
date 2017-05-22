@@ -32,37 +32,40 @@
 		}
 		@media (min-width: 992px) {
 			.nav-item {
-				padding: 15px 30px 15px 30px;
-   			border-right: 1px solid #5c5c5c;
+				padding: 15px;
+   				border-right: 1px solid #5c5c5c;
 				&:hover {
 						background-color: #646464;
 						text-decoration: none;
 					.subMenu {
 						display: block;
+						margin-left: -15px;
 					}
 				}
+				// a { padding: 15px; }
 			}
 			.subMenu, .children {
 				a {
 					color: white;
 					font-size: 17px;
 					text-transform: uppercase;
-					line-height: 30px;					
+					line-height: 50px;					
 					border-top: 1px solid #e6e6e6;
-    			display: block;
+    				display: block;					
 				}
 			}
 			.subMenu {
 				position: absolute;
-				-webkit-padding-start: 15px 15px; 
-				padding: 15px 15px;
+				-webkit-padding-start: 0px; 
+				padding: 0px;
 				display: none;
+				top: 70px;
 				.children {					
-					-webkit-padding-start: 15px 15px ;
-					padding: 15px 15px;
-					right: -280px;
+					-webkit-padding-start: 0px;
+					padding: 0px;
+					right: -231px;
 					position: relative;
-					top: -40px;
+					top: -50px;
 					display: none;
 				}
 				li { 
