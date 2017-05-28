@@ -44,7 +44,7 @@
 			<div class="card-deck d-flex justify-content-between"></div>	
 				
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>			
-				<div class="col-lg-4">
+				<div class="col-4">
 					<a href="<?php the_permalink(); ?>">
 						<div class="card">
 							<img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="">						
@@ -58,11 +58,12 @@
 						</div>
 					</a>
 				</div>
-		</div>
-				
+								
 			<?php endwhile; else: ?>
 			<?php endif; ?>
 		
+		</div>
+
 
 		<div class="col-4">
 			<ul class="nav nav-tabs nav-justified" role="tablist">
@@ -99,7 +100,9 @@
 
 		</div>	
 	
+	</div>
 </div>
+
 
 
 	<?php wordpress_pagination(); ?>
