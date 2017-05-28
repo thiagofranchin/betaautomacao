@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container categoryPage">
-	<div class="row">
+	<div class="row content">
 		<nav class="breadcrumb col-12" typeof="BreadcrumbList" vocab="https://schema.org/">
     	<?php if(function_exists('bcn_display'))
     	{
@@ -56,6 +56,8 @@
 					</a>
 				</div>
 
+				
+				
 			<?php endwhile; else: ?>
 			<?php endif; ?>
 			</div>
