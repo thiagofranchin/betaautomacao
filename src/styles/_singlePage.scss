@@ -8,7 +8,7 @@
 	.content {
 		background-color: #fff;	
 		border-bottom: 3px solid #ccc;
-		box-shadow: 5px 0px 10px 0px #ccc;
+		box-shadow:0px 0px 10px 0px #ccc;
 		position: relative;
 		z-index: 1;
 		.breadcrumb {
@@ -91,7 +91,7 @@
 	.produtosRelacionados {
 		padding: 10px 0 30px 0;
 		background-color: $gray-lighter;
-		box-shadow: 5px 0px 10px 0px #ccc;
+		box-shadow: 0px 0px 10px 0px #ccc;
 		.produtosRelacionadosTitle {
 			margin: 20px 0 20px 0;
 		}	

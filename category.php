@@ -41,6 +41,7 @@
 			</div>
 		
 		<div class="col-8">
+			<div class="row">
 			<div class="card-deck d-flex justify-content-between"></div>	
 				
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>			
@@ -55,12 +56,16 @@
 							<div class="card-footer">
 								<small class="text-muted"><?php echo rwmb_meta('resumo'); ?></small>
 							</div>
-						</div>
+						</div> 
 					</a>
 				</div>
 								
 			<?php endwhile; else: ?>
 			<?php endif; ?>
+			<br/>
+				<br/>
+				<br/>
+				</div>
 		
 		</div>
 
@@ -97,9 +102,12 @@
 					MENU MARCAS
 				</div>
 			</div>			
-
+	<br/>
+<br/>
+<br/>
 		</div>	
-	
+
+
 	</div>
 </div>
 
