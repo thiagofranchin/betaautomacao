@@ -6,12 +6,17 @@
 		padding: 0px;
 	}
 	.menuPrincipal {
-		background-color: $gray !important;
+		background-color: #424242 !important;
+		
+		
+		.navbar-collapse{
+		border-left: 1px solid #5c5c5c
+		}
+
 		ul {   
-			background-color: #424242;
-    	font-size: 18px;
+    	font-size: 20px;
     	font-weight: 400; 
-			border-left: 1px solid #5c5c5c;
+			
 		}
 		a { color: $white; }
 		a:hover { 
@@ -31,25 +36,29 @@
 		}
 		@media (min-width: 992px) {
 			.nav-item {
-				padding: 15px;
-   				border-right: 1px solid #5c5c5c;
+				padding: 15px 25px 15px 25px;
+				border-right: 1px solid #5c5c5c;
 				&:hover {
 						background-color: #646464;
 						text-decoration: none;
 					.subMenu {
-						display: block;
-						margin-left: -15px;
+						display: block;	
+						margin-left: -25px;
 					}
 				}
 				// a { padding: 15px; }
 			}
 			.subMenu, .children {
 				a {
-					color: white;
-					font-size: 17px;
-					line-height: 50px;					
-					border-top: 1px solid #e6e6e6;
-    				display: block;					
+					background-color: #fff;
+					border: 1px solid #ccc;
+					color:	gray;
+					font-size: 20px;
+					line-height: 50px;				
+    			display: block;		
+					&:hover {
+						background-color: #eee;
+					}
 				}
 			}
 			.subMenu {
@@ -57,13 +66,14 @@
 				-webkit-padding-start: 0px; 
 				padding: 0px;
 				display: none;
-				top: 70px;
+				top: 67px;
+				z-index: -2;
 				.children {					
 					-webkit-padding-start: 0px;
 					padding: 0px;
-					right: -231px;
+					right: -229px;
 					position: relative;
-					top: -50px;
+					top: -53px;
 					display: none;
 				}
 				li { 
@@ -82,6 +92,9 @@
 		}
 	}	
 }
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="container content">
 	<div class="row">
 		<?php include "src/components/slideHome.php"; ?>		
 	</div>
@@ -10,3 +10,5 @@
 	</div>
 </div>
 <?php get_footer(); ?>
+
+

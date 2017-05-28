@@ -1,3 +1,32 @@
 .slideHome {
 	background-color: $white;
 }
+
+.carousel-control-next-icon{
+	
+		
+    background-color: #4c4c4c;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-size: 25px;
+    background-position-x: 22px;
+	
+}
+
+
+.carousel-control-prev-icon{
+	
+	
+    background-color: #4c4c4c;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-size: 25px;
+    background-position-x: 20px;
+	
+}
+
+.content{
+		box-shadow: 0px 0px 10px 0px #ccc;	
+}
