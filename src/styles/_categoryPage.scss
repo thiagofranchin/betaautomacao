@@ -1,8 +1,27 @@
 .categoryPage {	
 	background-color: $white;
+	
+		.content {
+		background-color: #fff;	
+		border-bottom: 3px solid #ccc;
+		box-shadow: 5px 0px 10px 0px #ccc;
+		position: relative;
+			z-index: 1;
+	}
+	
+		.titulo {
+			padding: 10px 0 20px 30px;
+			color: $gray;	
+			border-bottom: solid 1px #ddd;
+			margin-bottom: 40px;
+		}
+	
 	.breadcrumb {
-		margin-top: 20px;
-		background-color: #fff;
+			margin-top: 10px;
+			background-color: #fff;
+			margin-bottom: 5px;
+			font-size:15px;
+			padding-left: 30px;
 	}
 	h1 {     
 		margin-bottom: 30px;		
@@ -30,7 +49,47 @@
 		}
 		.card-footer {
 			overflow: auto;
-		}
+		}		
 	}	
+	
+	.menu{
+		line-height: 30px;
+    margin-top: 30px;
+    font-size: 18px;
+		
+		
+	}
+	
+	
+	
+	.nav-tabs .nav-link.active{
+		color: #0664cc;
+    background-color: #fff;
+		border: 0px;
+    border-bottom: #0564cc 2px solid;
+    background: #eee;
+		font-size: 20px;
+    font-weight: 600;
+		border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+		
+
+	}
+	
+	.nav-item .nav-link{
+	  font-size: 20px;
+    color: #151515;
+    font-weight: 600;
+	
+	
 }
+	
+	
+}
+
+
+
+
+
+
 

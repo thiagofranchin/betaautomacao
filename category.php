@@ -8,7 +8,7 @@
         	bcn_display();
     	}?>
 		</nav>
-		<div class="col-8">
+		
 			<div class="col-12 titulo">
 				<h1>
 					<?php 	
@@ -39,7 +39,10 @@
 					?>
 				</h1>
 			</div>
-			<div class="card-deck d-flex justify-content-between">
+		
+		<div class="col-8">
+			<div class="card-deck d-flex justify-content-between"></div>	
+				
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>			
 				<div class="col-lg-4">
 					<a href="<?php the_permalink(); ?>">
@@ -55,13 +58,11 @@
 						</div>
 					</a>
 				</div>
-
-				
+		</div>
 				
 			<?php endwhile; else: ?>
 			<?php endif; ?>
-			</div>
-		</div>
+		
 
 		<div class="col-4">
 			<ul class="nav nav-tabs nav-justified" role="tablist">
@@ -97,13 +98,13 @@
 			</div>			
 
 		</div>	
-	</div>
 	
+</div>
 
 
 	<?php wordpress_pagination(); ?>
 
-</div>
+
 
 <?php get_footer(); ?>
 
