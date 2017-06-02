@@ -15,7 +15,8 @@
 	</title>
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/node_modules/animate.css/animate.min.css">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />	
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/src/styles/magnific-popup.css">
 	<?php wp_head(); ?>
 </head>
 <body>

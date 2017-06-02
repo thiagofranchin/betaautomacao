@@ -39,6 +39,22 @@
                 'name' => __( 'Link folder comercial', 'textdomain' ),
                 'type' => 'textarea',
             ),
+             // Galeria de fotos da página single.php abaixo da imagem destacada
+            array(
+                'id'   => 'foto1',
+                'name' => __( 'Foto 1 link', 'textdomain' ),
+                'type' => 'textarea',
+            ),
+             array(
+                'id'   => 'foto2',
+                'name' => __( 'Foto 2 link', 'textdomain' ),
+                'type' => 'textarea',
+            ),
+            array(
+                'id'   => 'foto3',
+                'name' => __( 'Foto 3 link', 'textdomain' ),
+                'type' => 'textarea',
+            ),
         ),
     );
     return $meta_boxes;
