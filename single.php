@@ -16,11 +16,11 @@
 			<hr>
 			<!-- IMAGEM EM DESTAQUE -->
 			<div class="col-3 imgProduto">
-				<div id="gallery-1" class="gallery galleryid-106 gallery-columns-3 gallery-size-thumbnail">
+				<div id="gallery-1" class="gallery galleryid-106 gallery-columns-3 gallery-size-thumbnail imgDestaque">
 					<dl class="">
 						<dt class="gallery-icon landscape">		
 							<a href="<?php the_post_thumbnail_url(); ?>" class="alignnone size-medium wp-image-9" >
-								<img class="img-fluid attachment-thumbnail size-thumbnail" src="<?php the_post_thumbnail_url(); ?>"/>
+								<img class="img-fluid attachment-thumbnail size-thumbnail d-block mx-auto" src="<?php the_post_thumbnail_url(); ?>"/>
 							</a>
 						</dt>				
 					</dl>
@@ -29,33 +29,33 @@
 				<!-- GALERIA DE IMAGENS -->
 				<div class="row">
 					<div class="col-4">
-						<div id="gallery-1" class="gallery galleryid-106 gallery-columns-3 gallery-size-thumbnail">
+						<div id="gallery-1" class="gallery galleryid-106 gallery-columns-3 gallery-size-thumbnail img-thumb">
 							<dl class="gallery-item">
 								<dt class="gallery-icon landscape">		
 									<a href="<?php echo rwmb_meta('foto1'); ?>" class="alignnone size-medium wp-image-9" >
-										<img class="img-fluid attachment-thumbnail size-thumbnail" src="<?php echo rwmb_meta('foto1'); ?>"/>
+										<img class="img-fluid attachment-thumbnail size-thumbnail img-thumb-gallery d-block mx-auto" src="<?php echo rwmb_meta('foto1'); ?>"/>
 									</a>
 								</dt>				
 							</dl>
 						</div>
 					</div>
 					<div class="col-4">
-						<div id="gallery-1" class="gallery galleryid-106 gallery-columns-3 gallery-size-thumbnail">
+						<div id="gallery-1" class="gallery galleryid-106 gallery-columns-3 gallery-size-thumbnail img-thumb">
 							<dl class="gallery-item">
 								<dt class="gallery-icon landscape">		
 									<a href="<?php echo rwmb_meta('foto2'); ?>" class="alignnone size-medium wp-image-9" >
-										<img class="img-fluid attachment-thumbnail size-thumbnail" src="<?php echo rwmb_meta('foto2'); ?>"/>
+										<img class="img-fluid attachment-thumbnail size-thumbnail img-thumb-gallery d-block mx-auto" src="<?php echo rwmb_meta('foto2'); ?>"/>
 									</a>
 								</dt>				
 							</dl>
 						</div>
 					</div>
 					<div class="col-4">
-						<div id="gallery-1" class="gallery galleryid-106 gallery-columns-3 gallery-size-thumbnail">
+						<div id="gallery-1" class="gallery galleryid-106 gallery-columns-3 gallery-size-thumbnail img-thumb">
 							<dl class="gallery-item">
 								<dt class="gallery-icon landscape">		
 									<a href="<?php echo rwmb_meta('foto3'); ?>" class="alignnone size-medium wp-image-9" >
-										<img class="img-fluid attachment-thumbnail size-thumbnail" src="<?php echo rwmb_meta('foto3'); ?>"/>
+										<img class="img-fluid attachment-thumbnail size-thumbnail img-thumb-gallery d-block mx-auto" src="<?php echo rwmb_meta('foto3'); ?>"/>
 									</a>
 								</dt>				
 							</dl>
