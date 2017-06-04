@@ -46,7 +46,8 @@
 			</div>
 		
 		<div class="col-8">
-			<div class="row">
+			<h2 class="h2-category">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed imperdiet nisi. Mauris tincidunt tristique augue. Integer vestibulum lectus ipsum, quis aliquam orci tristique vel. In mollis mauris quam, et ornare nisi porta eu. Maecenas sapien metus, mollis quis elementum imperdiet, pretium sed lacus</h2>
+			<div class="row pl-4">
 			<div class="card-deck d-flex justify-content-between"></div>	
 				
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>			
