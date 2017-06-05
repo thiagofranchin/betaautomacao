@@ -106,7 +106,7 @@ function show_related_posts_by_tag(){
         $args=array( 
             'tag__in' => $tag_ids, 
             'post__not_in' => array($post->ID), 
-            'posts_per_page' => 6 // Number of related posts that will be shown.
+            'posts_per_page' => 8 // Number of related posts that will be shown.
         ); 
         $my_query = new wp_query($args); 
         if( $my_query->have_posts() ) { 
@@ -116,7 +116,7 @@ function show_related_posts_by_tag(){
  
             while ($my_query->have_posts()) { 
                 $my_query->the_post(); ?>                                 
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <a href="<?php the_permalink(); ?>">
                             <div class="card">
                                 <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>">                        
