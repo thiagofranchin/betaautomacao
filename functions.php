@@ -112,13 +112,13 @@ function show_related_posts_by_tag(){
         if( $my_query->have_posts() ) { 
  
             echo '<div class="col-12 produtosRelacionadosTitle"><h3>Produtos relacionados</h3></div>'; 
-            echo '<div class="col-12"><div class="row"><div class="card-deck d-flex justify-content-between">';
+            echo '<div class="col-12"><div class="row"><div class="card-deck">';
  
             while ($my_query->have_posts()) { 
                 $my_query->the_post(); ?>                                 
                     <div class="col-lg-3">
                         <a href="<?php the_permalink(); ?>">
-                            <div class="card">
+                            <div class="card card-produtosRelacionados">
                                 <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>">                        
                                 <div class="card-block">
                                     <h4 class="card-title"><?php the_title(); ?></h4>
