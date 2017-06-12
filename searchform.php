@@ -13,7 +13,7 @@
   <div>
     <label class="screen-reader-text" for="s"></label>
     <input class="form-control mr-sm-2"	type="text" name="s" id="s" value="<?php echo get_search_query(); ?>" />
-    <?php wp_dropdown_categories( 'show_option_all=All Categories' ); ?>
-    <button type="submit" id="searchsubmit" class="btn btn-outline-success my-2 my-sm-0">Buscar</button>
+    <?php // wp_dropdown_categories( 'show_option_all=All Categories' ); ?>
+    <button type="submit" id="searchsubmit" class="btn btn-outline-info my-2 my-sm-0">Buscar</button>
   </div>
 </form>

@@ -54,8 +54,8 @@
 						<a href="<?php echo(get_permalink($page->ID)); ?>"><li class="nav-item"><?php echo($page->post_title); ?></li></a>
 
 					<?php } ?>
-					<li class="searchProduct">
-						<?php //get_search_form() ?>
+					<li class="searchProduct ml-3 mt-2">
+						<?php get_search_form() ?>
 					</li>
 				</ul>
 			</div>
