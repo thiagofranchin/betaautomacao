@@ -12,8 +12,8 @@
 <form class="form-inline my-2 my-lg-0" role="search" method="get" id="searchform" action="<?php bloginfo('siteurl'); ?>">
   <div class="search-position">
     <label class="screen-reader-text" for="s"></label>
-    <input class="form-control mr-sm-2"	type="text" name="s" id="s" placeholder="Ex.: Cabo Termopar" value="<?php echo get_search_query(); ?>" />
+    <input class="input-search form-control mr-sm-2"	type="text" name="s" id="s" placeholder="Ex.: Cabo Termopar" value="<?php echo get_search_query(); ?>" />
     <?php // wp_dropdown_categories( 'show_option_all=All Categories' ); ?>
-    <button type="submit" id="searchsubmit" class="btn btn-primary my-2 my-sm-0"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+    <button type="submit" id="searchsubmit" class="search btn btn-primary my-2 my-sm-0"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
   </div>
 </form>
