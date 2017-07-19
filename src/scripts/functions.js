@@ -54,3 +54,9 @@ $(document).ready(function() {
 		return true;
 	});
 });
+
+//Add value form produto
+(function(){
+	var tituloProduto = $('.titulo h1').text();
+	$(".your-product input").val(tituloProduto);
+})();
