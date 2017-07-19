@@ -13,6 +13,7 @@
 			</div>
 			<div class="col-12 col-sm-4">
 				<div class="categoriasFooter">
+						<h3>Produtos</h3>
 					<?php 
 					//if ( is_active_sidebar('sidebar-footer-middle') ) {
 					//	dynamic_sidebar('sidebar-footer-middle');

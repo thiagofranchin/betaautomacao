@@ -81,7 +81,7 @@
        
 			<div class="col-lg-4 contact-types"><p><i class="fa fa-volume-control-phone" aria-hidden="true"></i><br>11 9.9512-8912 / 11 9.5859-5416<br> Segunda – Sexta das 8h às 18h</p> </div>
 			<div class="col-lg-4 contact-types"><p><i class="fa fa-envelope-o" aria-hidden="true"></i><br>contato@betaautomacao. com.br</p> </div>
-			<div class="col-lg-4 contact-types"><p><i class="fa fa-map-signs" aria-hidden="true"></i><br> R: Estado do Rio de Janeiro, 326 <br> Terras de S.Pedro e S.Paulo <br> CEP 13324-454 Salto/SP</p> </div>
+			<div class="col-lg-4 contact-types"><p><i class="fa fa-map-signs" aria-hidden="true"></i><br> R. Estado do Rio de Janeiro, 326 <br> Terras de S.Pedro e S.Paulo <br> CEP 13324-454 Salto/SP</p> </div>
      
        
     </div>

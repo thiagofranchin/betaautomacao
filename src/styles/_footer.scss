@@ -3,13 +3,24 @@ footer {
 	color: $white;
 	padding-top: 30px;    
     position: relative;
+	
+	.fa{
+	padding-right: 10px;
+	}
+	
+	
+	
+	h3{
+	margin-bottom: 30px;
+	}
     // z-index: 2;
 	.logoFooter {
 		max-height: 130px;
 		padding: 20px;
 	}
 	.categoriasFooter {
-		ul { padding: 0px; }
+		    margin-left: 120px;
+		ul { padding: 0px;  line-height: 25px;}
 		a { color: white; }
 	}
 	.copyright {
