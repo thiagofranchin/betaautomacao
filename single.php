@@ -74,34 +74,42 @@
 				<input type="hidden" name="subject" value="Formulário FormMail"/><input type="hidden" name="redirect" value="http://192.185.217.158/~davicallegari/contato"/> -->
 
 				<h3>Faça um orçamento, estamos dispostos a negociar</h3>
-						
+						<br>
+					
+				
+					<div class="form-contato">
+									<div role="form" class="wpcf7" id="wpcf7-f116-o1" lang="pt-BR" dir="ltr">
+												<div class="screen-reader-response"></div>
+												<form action="/contato/#wpcf7-f116-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+												<div style="display: none;">
+												<input type="hidden" name="_wpcf7" value="116">
+												<input type="hidden" name="_wpcf7_version" value="4.8">
+												<input type="hidden" name="_wpcf7_locale" value="pt_BR">
+												<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f116-o1">
+												<input type="hidden" name="_wpcf7_container_post" value="0">
+												<input type="hidden" name="_wpcf7_nonce" value="ee1cb5078a">
+													</div>
 
-				<div class="form-group">
-					<label for="nome">Nome:</label>
-					<input type="text" id="nome" name="nome" size="40" placeholder="Seu nome" class="form-control">
-					<small id="errorNome" class="form-text text-muted"></small>
-				</div>
-				<div class="form-group">
-					<label for="nome">E-mail:</label>
-					<input type="email" name="email" size="40" placeholder="Seu e-mail" class="form-control">
-					<small id="errorEmail" class="form-text text-muted"></small>
-				</div>
-				<div class="form-group">
-					<label for="nome">Telefone:</label>
-					<input type="tel" name="telefone" size="40" placeholder="(99) 9-9999-9999" class="form-control">
-				</div>
-				<div class="form-group">
-					<label for="nome">Qual o produto:</label>
-					<input type="text" name="produto" size="40" placeholder="Inversor de frequência..." class="form-control">
-				</div>
-				<div class="form-group">
-					<label for="nome">Mensagem:</label>
-					<textarea name="mensagem" placeholder="Digite aqui sua mensagem" class="form-control"></textarea>
-				</div>
 
-				<button type="submit" name="Submit" class="btn btn-success btn-lg btn-block">Solicitar orçamento</button>
-
-			</form>
+										<p>    <label>Nome</label><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Seu nome"></span> </p>
+													
+										<p>    <label>E-mail</label><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="seunome@email.com.br"></span> </p>
+													
+													<p>    <label>Produto</label><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="<?php the_title(); ?>" size="40" class="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Produto"></span> </p>
+													
+										<p>    <label>Mensagem</label><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea form-control" aria-invalid="false" placeholder="Digite sua mensagem"></textarea></span> </p>
+													
+										<p><input type="submit" style="cursor: pointer !important;" value="Solicitar orçamento" class="wpcf7-form-control wpcf7-submit btn btn-success btn-lg btn-block">
+										<span class="ajax-loader" src="http://www.betaautomacao.com.br/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Enviando ..." style="visibility: hidden;"></span></p>
+													
+										<div class="clearfix"></div><div class="wpcf7-response-output wpcf7-display-none"></div></form>
+										
+										
+									
+										
+										
+						</div>        
+					</div>
 		</div>
 
 		<div class="col-8 detalhesInfoTec">
@@ -210,4 +218,9 @@
 	</div>
 </div>
 
+	
+	
+	
+	
+	
 <?php get_footer(); ?>
