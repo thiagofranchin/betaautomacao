@@ -21,11 +21,11 @@ Text Domain: fk
 
 body {
 	background-color: $gray-lightest;
-	overflow-x: hidden;
-	li { list-style-type: none; }
+	overflow-x: hidden;	
 	@media (max-width: 991px) { padding-top: 74px; }
 }
 
+@import "src/styles/reset";
 @import "src/styles/header";
 @import "src/styles/menuPrincipal";
 @import "src/styles/slideHome";

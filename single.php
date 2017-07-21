@@ -72,7 +72,8 @@
 					<?php echo do_shortcode('[contact-form-7 id="167" title="Formulário Produtos"]')?>										
 				</div>        
 			</div>
-	
+		</div>
+
 		<div class="col-8 detalhesInfoTec">
 
 			<?php 
