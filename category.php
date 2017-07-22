@@ -106,21 +106,20 @@
 				<div class="tab-pane" id="marcas" role="tabpanel">
 					MENU MARCAS
 				</div>
-			</div>			
-	<br/>
-<br/>
-<br/>
-		</div>	
+			</div>	
+			<br/>
+			<br/>
+			<br/>
+		</div>
+		<div class="row d-block mx-auto my-4">
+			<div class="col-12">
+				<?php wordpress_pagination(); ?>		
+			</div>
+		</div>
 
 
 	</div>
 </div>
-
-
-
-	<?php wordpress_pagination(); ?>
-
-
 
 <?php get_footer(); ?>
 
