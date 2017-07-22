@@ -172,4 +172,3 @@ add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 
 
 ?>
-
