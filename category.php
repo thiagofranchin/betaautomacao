@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="container categoryPage">
 	<div class="row content">
 		<nav class="breadcrumb col-12" typeof="BreadcrumbList" vocab="https://schema.org/">

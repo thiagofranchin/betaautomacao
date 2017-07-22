@@ -5,32 +5,9 @@ Author: Thiago Franchin
 Author URI: http://www.franchin.com.br/
 Description: Thema responsivo, bootstrap 4
 Version: 1.0
-License: Pode usar, foi eu que fiz
+License: 'MIT' Pode usar, foi eu que fiz.
 License URI: http://www.franchin.com.br/
 Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 Text Domain: fk
 
 */
-
-/* sass --watch style.scss:style.css --style compressed */
-
-@import 'src/styles/colors';
-@import 'src/styles/grid-xl';
-@import 'node_modules/bootstrap/scss/bootstrap';
-
-
-body {
-	background-color: $gray-lightest;
-	overflow-x: hidden;	
-	@media (max-width: 991px) { padding-top: 74px; }
-}
-
-@import "src/styles/reset";
-@import "src/styles/header";
-@import "src/styles/menuPrincipal";
-@import "src/styles/slideHome";
-@import "src/styles/categoriaPosts"; 
-@import "src/styles/categoryPage";
-@import "src/styles/singlePage"; 
-@import "src/styles/footer";
-@import "src/styles/forms";

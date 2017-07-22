@@ -1,0 +1,25 @@
+/* sass --watch scss/betaautomacao.scss:css/betaautomacao.min.css --style compressed */
+
+@import 'partials/variableColors';
+@import 'partials/grid-xl';
+@import './../node_modules/bootstrap/scss/bootstrap';
+@import 'partials/colors';
+
+body {
+	background-color: $gray-lightest;
+	overflow-x: hidden;	
+	@media (max-width: 991px) { padding-top: 74px; }
+}
+
+@import './../node_modules/font-awesome/css/font-awesome.min.css';
+@import './../node_modules/animate.css/animate.min.css';
+@import './../css/magnific-popup.css';
+@import 'partials/reset';
+@import 'partials/header';
+@import 'partials/menuPrincipal';
+@import 'partials/slideHome';
+@import 'partials/categoriaPosts'; 
+@import 'partials/categoryPage';
+@import 'partials/singlePage'; 
+@import 'partials/footer';
+@import 'partials/forms';

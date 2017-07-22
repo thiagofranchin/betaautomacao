@@ -55,8 +55,17 @@ $(document).ready(function() {
 	});
 });
 
-//Add value form produto
+
 (function(){
+	//Add value form produto
 	var tituloProduto = $('.titulo h1').text();
 	$(".your-product input").val(tituloProduto);
+
+	// Retira a palavra "Arquivos do title"
+	var titlePage = $('title').text();
+	var n = titlePage.indexOf("Arquivos");
+	if(n === 0){
+		document.title = titlePage.replace('Arquivos', ''); 
+	}
+
 })();

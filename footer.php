@@ -55,20 +55,8 @@
 		?>		
 	</div>
 </footer>
+	<!-- <script src="https://use.fontawesome.com/dc795d5f11.js"></script> -->
 
-
-	<!-- SCRIPT -->
-	<script src="<?php bloginfo('template_url'); ?>/node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/node_modules/tether/dist/js/tether.min.js"></script>
-	<script src="https://use.fontawesome.com/dc795d5f11.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/src/scripts/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/src/scripts/galeria.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/src/scripts/functions.js"></script>
-	<?php wp_footer(); ?>
-	
-	<script>
-		
-	</script>
+<?php wp_footer(); ?>
 </body>
 </html>
