@@ -148,7 +148,7 @@
 
 
 			<div class="col-4 formularioSinglePage">
-				<h3 class="mb-3">Faça um orçamento, estamos dispostos a negociar</h3>
+				<h3 class="mb-3">Faça agora um orçamento, <br> somos<strong> bons de negócio! ;)</strong> </h3>
 				<div class="form-contato">
 					<?php echo do_shortcode('[contact-form-7 id="167" title="Formulário Produtos"]')?>										
 				</div>        

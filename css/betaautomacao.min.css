@@ -6862,12 +6862,20 @@ h1 {
   font-weight: 400; }
 
 h3 {
-  font-size: 1.65rem !important; }
+  font-size: 1.65rem !important;
+  color: #4C4C4C !important;
+  font-weight: 400 !important; }
+
+h4 {
+  font-weight: 500 !important; }
 
 .btn-success {
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase; }
+
+strong {
+  font-weight: 500 !important; }
 
 header {
   background-color: #fff; }
@@ -6878,20 +6886,10 @@ header {
     padding: 20px; }
   header .headerBoxLeft {
     padding: 30px 20px 0px 0px; }
-    header .headerBoxLeft h3 {
-      color: #4C4C4C;
-      font-size: 35px;
-      font-weight: 400; }
-    header .headerBoxLeft .widget {
-      border-left: 1px solid #ccc;
-      padding-left: 30px;
-      margin-left: -10px; }
   header .headerBoxRight {
     padding: 30px 20px 0px 0px; }
     header .headerBoxRight h3 {
-      color: #4C4C4C;
-      font-size: 25px;
-      font-weight: 400; }
+      font-weight: 400 !important; }
   header p {
     color: #4C4C4C; }
 
@@ -7216,7 +7214,8 @@ footer {
       margin-bottom: 0; }
 
 .form-contato label {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 10px; }
 .form-contato .wpcf7-validation-errors {
   border: none !important;
   text-align: center;

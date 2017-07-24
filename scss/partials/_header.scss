@@ -11,27 +11,12 @@ header {
 	}
 	.headerBoxLeft {
 		padding: 30px 20px 0px 0px;	
-		
-		h3 {
-			color: $gray-light;
-			font-size: 35px;
-			font-weight: 400;
-		}
-		.widget{
-		border-left: 1px solid #ccc;
-    padding-left: 30px;
-		margin-left: -10px;
-	
-	}
-		
 	}
 		
 		.headerBoxRight{
 			padding: 30px 20px 0px 0px;
 			h3 {
-			color: $gray-light;
-			font-size: 25px;
-			font-weight: 400;
+			font-weight: 400 !important;
 			}
 			
 		}
@@ -42,6 +27,7 @@ header {
 
 	}
 
+	
 
 
 
