@@ -11,39 +11,43 @@
 				}
 				?>
 			</div>
-			<div class="col-12 col-sm-4">
-				<div class="categoriasFooter">
-						<h3>Produtos</h3>
+			<div class="col-12 col-sm-5">
+				<div class="contato-footer">
 					<?php 
-					//if ( is_active_sidebar('sidebar-footer-middle') ) {
-					//	dynamic_sidebar('sidebar-footer-middle');
-					//}
-
-					?>
-					<?php
-					wp_nav_menu( array(
-						'menu'              => 'secondary',
-						'theme_location'    => 'secondary',
-						'echo' 				=> true,
-						'container'         => 'div',
-						'container_id'   	=> '',
-						'container_class'   => 'list-group',
-						'before' 			=> '',
-						'a_class'			=> 'list-group-item list-group-item-action',					
-						'after' 			=> '',
-						'depth'				=> 3,
-						'walker'			=> '')
-					);
-					?>
-
-				</div>
-			</div>
-			<div class="col-12 col-sm-4">
-				<?php 
 				if ( is_active_sidebar('sidebar-footer-right') ) {
 					dynamic_sidebar('sidebar-footer-right');
 				}
 				?>
+				</div>
+			</div>
+			<div class="col-12 col-sm-3">
+
+				<div class="categoriasFooter">
+							<h4>Produtos</h4>
+						<?php 
+						//if ( is_active_sidebar('sidebar-footer-middle') ) {
+						//	dynamic_sidebar('sidebar-footer-middle');
+						//}
+
+						?>
+						<?php
+						wp_nav_menu( array(
+							'menu'              => 'secondary',
+							'theme_location'    => 'secondary',
+							'echo' 				=> true,
+							'container'         => 'div',
+							'container_id'   	=> '',
+							'container_class'   => 'list-group',
+							'before' 			=> '',
+							'a_class'			=> 'list-group-item list-group-item-action',					
+							'after' 			=> '',
+							'depth'				=> 3,
+							'walker'			=> '')
+						);
+						?>
+
+				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -55,7 +59,7 @@
 		?>		
 	</div>
 </footer>
-	<!-- <script src="https://use.fontawesome.com/dc795d5f11.js"></script> -->
+	<script src="https://use.fontawesome.com/dc795d5f11.js"></script> 
 
 <?php wp_footer(); ?>
 </body>
