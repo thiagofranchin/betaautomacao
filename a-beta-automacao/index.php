@@ -42,7 +42,7 @@
 
 <body id="page-top">
 
-    <!-- Navigation -->
+   <!-- Navigation 
     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,13 +63,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Team</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav>-->
 
     <!-- Header -->
     <header class="masthead">
@@ -286,13 +283,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image bg-blue">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
+                
                     </ul>
                 </div>
             </div>
@@ -309,60 +300,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/team/1.jpg" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
+                
+                <div class="col-sm-12 text-center">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/team/2.jpg" alt="">
                         <h4>Larry Parker</h4>
                         <p class="text-muted">Lead Marketer</p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/team/3.jpg" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+               
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
@@ -372,112 +323,10 @@
         </div>
     </section>
 
-    <!-- Clients -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/logos/envato.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/logos/designmodo.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/logos/themeforest.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/logos/creative-market.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form id="contactForm" name="sentMessage" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button class="btn btn-xl bg-blue" type="submit">Enviar mensagem</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+ 
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2017</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li class="list-inline-item">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+
 
     <!-- Portfolio Modals -->
 
@@ -687,9 +536,6 @@
     <!-- Plugin JavaScript -->
     <script src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/js/jqBootstrapValidation.js"></script>
-    <script src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/js/agency.min.js"></script>

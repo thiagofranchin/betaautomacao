@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Agency v4.0.0-alpha (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -42,7 +37,6 @@ section {
 @media (min-width: 768px) {
   section {
     padding: 150px 0; } }
-
 ::-moz-selection {
   background: #fed136;
   text-shadow: none; }
@@ -111,7 +105,6 @@ body {
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0; } }
-
 header.masthead {
   text-align: center;
   color: white;
@@ -157,7 +150,6 @@ header.masthead {
       margin-bottom: 50px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; } }
-
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
@@ -210,19 +202,16 @@ header.masthead {
       font-style: italic;
       margin: 0;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-
 #portfolio * {
   z-index: 2; }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px; } }
-
 .portfolio-modal .modal-dialog {
   max-width: none;
   height: 100%;
   margin: 0; }
-
 .portfolio-modal .modal-content {
   min-height: 100%;
   padding: 100px 0;
@@ -249,7 +238,6 @@ header.masthead {
     margin-bottom: 30px; }
   .portfolio-modal .modal-content button {
     cursor: pointer; }
-
 .portfolio-modal .close-modal {
   position: absolute;
   top: 25px;
@@ -281,7 +269,6 @@ header.masthead {
       -ms-transform: rotate(90deg);
       transform: rotate(90deg);
       background-color: #222222; }
-
 .portfolio-modal .modal-backdrop {
   display: none;
   opacity: 0; }
@@ -389,7 +376,6 @@ header.masthead {
       float: right;
       padding: 0 30px 20px 20px;
       text-align: left; } }
-
 @media (min-width: 992px) {
   .timeline > li {
     min-height: 150px; }
@@ -405,7 +391,6 @@ header.masthead {
         margin-top: 30px; }
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 0 20px 20px; } }
-
 @media (min-width: 1200px) {
   .timeline > li {
     min-height: 170px; }
@@ -419,7 +404,6 @@ header.masthead {
         margin-top: 40px; }
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 0 100px 20px 20px; } }
-
 .team-member {
   margin-bottom: 50px;
   text-align: center; }
@@ -531,25 +515,17 @@ ul.social-buttons {
     color: white;
     border-color: #f6bf01;
     background-color: #fec503; }
-  .btn-primary:active, .btn-primary.active,
-  .open > .btn-primary.dropdown-toggle {
+  .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: white;
     border-color: #f6bf01;
     background-color: #fec503; }
-    .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
-    .open > .btn-primary.dropdown-toggle:hover,
-    .open > .btn-primary.dropdown-toggle:focus,
-    .open > .btn-primary.dropdown-toggle.focus {
+    .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
       color: white;
       border-color: #b48b01;
       background-color: #dcab01; }
-  .btn-primary:active, .btn-primary.active,
-  .open > .btn-primary.dropdown-toggle {
+  .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
-  .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
-  fieldset[disabled] .btn-primary:hover,
-  fieldset[disabled] .btn-primary:focus,
-  fieldset[disabled] .btn-primary.focus {
+  .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
     border-color: #fed136;
     background-color: #fed136; }
   .btn-primary .badge {
@@ -574,27 +550,21 @@ ul.social-buttons {
     color: white;
     border-color: #f6bf01;
     background-color: #fec503; }
-  .btn-xl:active, .btn-xl.active,
-  .open > .btn-xl.dropdown-toggle {
+  .btn-xl:active, .btn-xl.active, .open > .btn-xl.dropdown-toggle {
     color: white;
     border-color: #f6bf01;
     background-color: #fec503; }
-    .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus,
-    .open > .btn-xl.dropdown-toggle:hover,
-    .open > .btn-xl.dropdown-toggle:focus,
-    .open > .btn-xl.dropdown-toggle.focus {
+    .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus, .open > .btn-xl.dropdown-toggle:hover, .open > .btn-xl.dropdown-toggle:focus, .open > .btn-xl.dropdown-toggle.focus {
       color: white;
       border-color: #b48b01;
       background-color: #dcab01; }
-  .btn-xl:active, .btn-xl.active,
-  .open > .btn-xl.dropdown-toggle {
+  .btn-xl:active, .btn-xl.active, .open > .btn-xl.dropdown-toggle {
     background-image: none; }
-  .btn-xl.disabled:hover, .btn-xl.disabled:focus, .btn-xl.disabled.focus, .btn-xl[disabled]:hover, .btn-xl[disabled]:focus, .btn-xl[disabled].focus,
-  fieldset[disabled] .btn-xl:hover,
-  fieldset[disabled] .btn-xl:focus,
-  fieldset[disabled] .btn-xl.focus {
+  .btn-xl.disabled:hover, .btn-xl.disabled:focus, .btn-xl.disabled.focus, .btn-xl[disabled]:hover, .btn-xl[disabled]:focus, .btn-xl[disabled].focus, fieldset[disabled] .btn-xl:hover, fieldset[disabled] .btn-xl:focus, fieldset[disabled] .btn-xl.focus {
     border-color: #fed136;
     background-color: #fed136; }
   .btn-xl .badge {
     color: #fed136;
     background-color: white; }
+
+/*# sourceMappingURL=agency.css.map */
