@@ -72,9 +72,9 @@
     <header class="masthead">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="btn btn-xl bg-blue">Tell Me More</a>
+                <div class="intro-lead-in">Controle de automação e processos industriais</div>
+                <div class="intro-heading">Beta Automação</div>
+                <a href="#services" class="btn btn-xl bg-blue">CONHEÇA</a>
             </div>
         </div>
     </header>
@@ -84,34 +84,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Conheça mais sobre nós</h2>
+                    <h3 class="section-subheading text-muted">Há 20 anos fornecendo o melhor para a sua empresa</h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Especialista</h4>
+                    <p class="text-muted">A Beta é uma empresa voltada ao fornecimento de soluções para o controle de temperatura em processos industriais.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-heart-o fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Valores</h4>
+                    <p class="text-muted">Nossos valores são principalmente o respeito, a ética, o profissionalismo e dedicação por aquilo que fazemos.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Qualidade</h4>
+                    <p class="text-muted">Temos o compromisso com a qualidade de nossos produtos, que possuem certificação CE, além de passarem por testes antes de serem enviados aos nossos clientes</p>
                 </div>
             </div>
         </div>
@@ -122,8 +122,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Representante</h2>
+                    <h3 class="section-subheading text-muted">Empresas parceiras da Beta</h3>
                 </div>
             </div>
             <div class="row">
@@ -137,8 +137,8 @@
                         <img class="img-fluid" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/portfolio/01-thumbnail.jpg" alt="">
                     </div>
                     <div class="portfolio-caption">
-                        <h4>Threads</h4>
-                        <p class="text-muted">Illustration</p>
+                        <h4>Novus</h4>
+                        <p class="text-muted">Eletrônicos</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">

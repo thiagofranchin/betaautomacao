@@ -17,3 +17,8 @@
     @include button-variant(white, $theme-primary, $theme-primary);
     @include heading-font;
 }
+
+.btn {
+     padding: 1.0rem 1rem !important;
+}
+
