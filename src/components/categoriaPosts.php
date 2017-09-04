@@ -11,7 +11,7 @@
 				$posts_slides = new WP_Query(array(
 					//'post_type' => 'post',
 					'category_name' => 'Cabos Industriais',
-					'posts_per_page' => 5
+					'posts_per_page' => 3
 					));				
 				while ($posts_slides->have_posts()) : $posts_slides->the_post();
 				?>					
@@ -31,6 +31,7 @@
 				</div>
 				<?php endwhile; wp_reset_postdata();?>
 			</div>
+			<button type="button" text-align="center" class="btn btn-outline-primary">Todos os Cabos</button>
 		</div><!-- /.row-->
 		
 		<hr>
@@ -45,7 +46,7 @@
 				$posts_slides = new WP_Query(array(
 					//'post_type' => 'post',
 					'category_name' => 'Sensores',
-					'posts_per_page' => 5
+					'posts_per_page' => 3
 					));				
 				while ($posts_slides->have_posts()) : $posts_slides->the_post();
 				?>					
@@ -65,6 +66,8 @@
 				</div>
 				<?php endwhile; wp_reset_postdata();?>
 			</div>
+			<button type="button" text-align="center" class="btn btn-outline-primary">Todos os Sensores</button>
 		</div><!-- /.row-->
 	</div><!-- /.container-->
+		<hr>
 </div><!-- /.categoriaPosts-->
