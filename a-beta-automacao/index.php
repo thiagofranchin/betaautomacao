@@ -165,8 +165,8 @@
                         <img class="img-fluid" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/portfolio/03-thumbnail.jpg" alt="">
                     </div>
                     <div class="portfolio-caption">
-                        <h4>Finish</h4>
-                        <p class="text-muted">Identity</p>
+                        <h4>KAP</h4>
+                        <p class="text-muted">Materiais elétricas</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -304,8 +304,8 @@
                 <div class="col-sm-12 text-center">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="<?php echo get_template_directory_uri() . '/a-beta-automacao'; ?>/img/team/2.jpg" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
+                        <h4>Devanir Éder Callegari</h4>
+                        <p class="text-muted">Consultor Regional</p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item">
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -384,8 +384,8 @@
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Client: Explore</li>
-                                    <li>Category: Graphic Design</li>
+                                    <li>Client: Huade América</li>
+                                    <li>Materiais elétricos</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
                             </div>
@@ -417,8 +417,8 @@
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Client: Finish</li>
-                                    <li>Category: Identity</li>
+                                    <li>KAP</li>
+                                    <li>Materiais Elétricos</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
                             </div>
